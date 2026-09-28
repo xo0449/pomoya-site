@@ -3,16 +3,16 @@
   "name": "토토",
   "line": "rabbit",
   "stage": 3,
-  "version": 1,
+  "version": 3,
   "tier": "paid",
   "source": {
-    "author": "뽀모야 (문자열로 픽셀을 놓아 그림, art/mammals.py)",
+    "author": "art/four/four.py (2026-09-28, 캐릭터 디자인 스킬로 평가)",
     "license": "project-internal"
   },
   "cell": 32,
   "metrics": {
-    "height": 31,
-    "hangHeight": 32
+    "height": 29,
+    "hangHeight": 29
   },
   "traits": {
     "walkSpeed": 1.6,
@@ -30,6 +30,16 @@
       "frames": 4,
       "frameMs": 140
     },
+    "hungry": {
+      "sheet": "hungry.png",
+      "frames": 4,
+      "frameMs": 240
+    },
+    "holdNose": {
+      "sheet": "holdNose.png",
+      "frames": 4,
+      "frameMs": 150
+    },
     "sit": {
       "sheet": "sit.png",
       "frames": 3,
@@ -40,10 +50,25 @@
       "frames": 2,
       "frameMs": 900
     },
+    "study": {
+      "sheet": "study.png",
+      "frames": 4,
+      "frameMs": 900
+    },
     "nap": {
       "sheet": "nap.png",
       "frames": 2,
       "frameMs": 1100
+    },
+    "stretch": {
+      "sheet": "stretch.png",
+      "frames": 2,
+      "frameMs": 500
+    },
+    "poop": {
+      "sheet": "poop.png",
+      "frames": 2,
+      "frameMs": 240
     },
     "dragged": {
       "sheet": "dragged.png",
@@ -59,6 +84,21 @@
       "sheet": "angry.png",
       "frames": 2,
       "frameMs": 170
+    },
+    "eat": {
+      "sheet": "eat.png",
+      "frames": 4,
+      "frameMs": 170
+    },
+    "happy": {
+      "sheet": "happy.png",
+      "frames": 2,
+      "frameMs": 190
+    },
+    "play": {
+      "sheet": "play.png",
+      "frames": 4,
+      "frameMs": 190
     },
     "climb": {
       "sheet": "climb.png",
@@ -79,41 +119,6 @@
       "sheet": "hangLimp.png",
       "frames": 2,
       "frameMs": 700
-    },
-    "eat": {
-      "sheet": "eat.png",
-      "frames": 4,
-      "frameMs": 170
-    },
-    "happy": {
-      "sheet": "happy.png",
-      "frames": 2,
-      "frameMs": 190
-    },
-    "stretch": {
-      "sheet": "stretch.png",
-      "frames": 2,
-      "frameMs": 500
-    },
-    "poop": {
-      "sheet": "poop.png",
-      "frames": 2,
-      "frameMs": 240
-    },
-    "hungry": {
-      "sheet": "hungry.png",
-      "frames": 4,
-      "frameMs": 240
-    },
-    "holdNose": {
-      "sheet": "holdNose.png",
-      "frames": 4,
-      "frameMs": 150
-    },
-    "study": {
-      "sheet": "study.png",
-      "frames": 4,
-      "frameMs": 900
     }
   }
 }
