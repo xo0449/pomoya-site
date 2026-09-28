@@ -3,7 +3,7 @@
   "name": "강디",
   "line": "dog",
   "stage": 0,
-  "version": 4,
+  "version": 5,
   "tier": "paid",
   "source": {
     "author": "art/four/four.py (2026-09-28, 캐릭터 디자인 스킬로 평가)",
@@ -12,7 +12,7 @@
   "cell": 32,
   "metrics": {
     "height": 12,
-    "hangHeight": 20
+    "hangHeight": 16
   },
   "anims": {
     "idle": {

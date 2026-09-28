@@ -3,7 +3,7 @@
   "name": "나비",
   "line": "cat",
   "stage": 0,
-  "version": 6,
+  "version": 7,
   "tier": "free",
   "source": {
     "author": "art/four/four.py (2026-09-28, 캐릭터 디자인 스킬로 평가)",
@@ -12,7 +12,7 @@
   "cell": 32,
   "metrics": {
     "height": 16,
-    "hangHeight": 19
+    "hangHeight": 18
   },
   "traits": {
     "walkSpeed": 1.3,

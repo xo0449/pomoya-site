@@ -3,7 +3,7 @@
   "name": "피피",
   "line": "chick",
   "stage": 3,
-  "version": 6,
+  "version": 7,
   "tier": "paid",
   "source": {
     "author": "art/four/four.py (2026-09-28, 캐릭터 디자인 스킬로 평가)",
@@ -12,7 +12,7 @@
   "cell": 32,
   "metrics": {
     "height": 26,
-    "hangHeight": 29
+    "hangHeight": 26
   },
   "anims": {
     "idle": {
