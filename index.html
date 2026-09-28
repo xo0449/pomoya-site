@@ -3,83 +3,79 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>뽀모야 — 밥 안 주면 마우스까지 기어올라오는 데스크톱 펫</title>
-<meta name="description" content="화면 위를 돌아다니는 픽셀 펫. 굶기면 화면을 기어올라 마우스에 매달려 떼쓰고, 똥을 안 치우면 냄새가 진동합니다. Windows · macOS." />
+<title>뽀모야 — 집중할수록 자라는 나만의 친구</title>
+<meta name="description" content="바탕화면에 사는 픽셀 친구와 함께하는 뽀모도로 타이머. 모인 시간으로 밥과 놀이를 주며 아기에서 어른까지 키워요. Windows · macOS." />
 <link rel="icon" href="/pomoya-site/favicon.png" />
-<style>:root{--bg:#fff8ec;--ink:#2b2118;--sub:#7a6a58;--line:#ecdcc3;--card:#fff;--accent:#f08a3c;--accent-ink:#fff;--soft:#ffe9cf;--green:#7fb069;--sky1:#2b3a55;--sky2:#8fb3d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);word-break:keep-all;margin:0;font:17px/1.7 -apple-system,Pretendard,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,system-ui,sans-serif}a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 24px}nav{justify-content:space-between;align-items:center;padding:18px 0;display:flex}.logo{letter-spacing:-.02em;align-items:center;gap:10px;font-size:20px;font-weight:800;text-decoration:none;display:flex}.logo canvas{width:36px;height:36px;image-rendering:pixelated}nav .links{color:var(--sub);gap:22px;font-size:15px;display:flex}nav .links a{text-decoration:none}nav .links a:hover{color:var(--ink)}.pill{background:var(--soft);color:#b6571a;border-radius:999px;padding:3px 12px;font-size:13px;font-weight:700;display:inline-block}header.hero{text-align:center;padding:36px 0 0}h1{letter-spacing:-.035em;max-width:820px;margin:18px auto 14px;font-size:clamp(34px,5.4vw,60px);line-height:1.15}h1 em{color:var(--accent);font-style:normal}.lede{max-width:620px;color:var(--sub);margin:0 auto;font-size:19px}.cta{flex-wrap:wrap;justify-content:center;gap:12px;margin:28px 0 8px;display:flex}.btn{border:2px solid var(--ink);background:var(--ink);color:#fff;font:inherit;cursor:pointer;border-radius:14px;align-items:center;gap:8px;padding:13px 22px;font-weight:700;text-decoration:none;display:inline-flex;box-shadow:0 4px #0000002e}.btn.ghost{color:var(--ink);box-shadow:none;background:0 0}.btn[aria-disabled=true]{opacity:.55;cursor:default}.btn small{opacity:.8;font-weight:500}.note{color:var(--sub);font-size:14px}.stage-wrap{max-width:1080px;margin:36px auto 0;padding:0 24px;position:relative}@media (min-width:761px){.stage-wrap .hud{top:14px;right:38px}}.stage{border:3px solid var(--ink);background:linear-gradient(#5b6fa8 0%,#8d8fc4 38%,#e7a9a6 72%,#f6d2a8 100%);border-bottom:0;border-radius:22px 22px 0 0;height:460px;position:relative;overflow:hidden}.stage canvas{position:absolute;top:0;left:0}.sky{image-rendering:pixelated;pointer-events:none;position:absolute;inset:0}.cloud{opacity:.85;background:#fbe9e2;height:16px;position:absolute;box-shadow:16px -12px #fbe9e2,40px -18px 0 8px #fbe9e2,72px -10px #fbe9e2,24px 4px #f3cfc8,56px 4px #f3cfc8}.hills{opacity:.9;background:radial-gradient(120px 70px at 12% 100%,#7fb58a 98%,#0000 100%),radial-gradient(200px 90px at 38% 100%,#6aa67c 98%,#0000 100%),radial-gradient(160px 60px at 66% 100%,#7fb58a 98%,#0000 100%),radial-gradient(220px 80px at 92% 100%,#6aa67c 98%,#0000 100%);height:90px;position:absolute;bottom:0;left:0;right:0}.icons{z-index:1;gap:14px;display:grid;position:absolute;top:118px;left:18px}.ico{text-align:center;color:#fff;text-shadow:0 1px 2px #0009;width:64px;font-size:11.5px}.ico i{border:2px solid var(--ink);background:#ffd36a;border-radius:3px;width:34px;height:28px;margin:0 auto 4px;display:block;position:relative;box-shadow:inset 0 6px #ffe9a8}.ico i:before{content:"";border:2px solid var(--ink);background:#ffd36a;border-bottom:0;border-radius:3px 3px 0 0;width:14px;height:6px;position:absolute;top:-8px;left:-2px}.ico.bin i{background:#dfe6ee;border-radius:2px 2px 5px 5px;width:26px;height:30px;box-shadow:inset 0 5px #f4f7fa,inset 6px 0 0 -4px #b8c4d0}.ico.bin i:before{border:2px solid var(--ink);background:#b8c4d0;border-radius:2px;width:32px;height:4px;top:-7px;left:-5px}.ico.txt i{background:#fff;width:26px;height:32px;box-shadow:inset 0 -18px 0 -14px #c9ced4}.ico.txt i:before{display:none}.fake{border:2px solid var(--ink);text-align:left;z-index:1;background:#fdfdfd;border-radius:10px;position:absolute;overflow:hidden;box-shadow:0 14px 0 -8px #0000002e,0 18px 40px #14142859}.fake .bar{border-bottom:2px solid var(--ink);color:#5b6470;background:#eceff3;align-items:center;gap:6px;padding:8px 10px;font-size:12px;display:flex}.fake .bar i{border:1.5px solid var(--ink);background:#ff8a8a;border-radius:50%;width:10px;height:10px}.fake .bar i:nth-child(2){background:#ffd36a}.fake .bar i:nth-child(3){background:#8fd48f}.fake .bar span{margin-left:6px}.fake .ln{background:#e8ebef;border-radius:4px;height:8px;margin:9px 14px}.fake h5{color:#2b2118;margin:12px 14px 4px;font-size:14px}.w-doc{width:34%;height:52%;top:8%;left:27%}.w-chat{background:#fffaf2;width:22%;height:42%;top:36%;right:17%}.w-chat .msg{background:#ffe3c2;border-radius:10px;width:-moz-fit-content;width:fit-content;max-width:85%;margin:8px 10px;padding:6px 10px;font-size:12.5px}.w-chat .msg.me{background:#d9ecff;margin-left:auto}.hud{z-index:3;flex-direction:column;align-items:flex-end;gap:8px;display:flex;position:absolute;top:14px;right:14px}.hud button{border:2px solid var(--ink);color:var(--ink);font:inherit;cursor:pointer;box-shadow:0 3px 0 var(--ink);background:#fff;border-radius:10px;padding:8px 14px;font-size:14px;font-weight:700}.hud button:hover{box-shadow:0 2px 0 var(--ink);transform:translateY(1px)}.hud button:active{box-shadow:none;transform:translateY(3px)}.hud button.main{background:var(--accent);color:#fff}.hud .state{border:2px solid var(--ink);background:#fff;border-radius:10px;padding:6px 12px;font-size:13px;font-weight:700}.taskbar{border:3px solid var(--ink);color:#aab3bf;background:#1b202a;border-top:0;border-radius:0 0 22px 22px;align-items:center;gap:10px;height:44px;padding:0 16px;font-size:13px;display:flex}.taskbar .start{grid-template-columns:1fr 1fr;gap:2px;width:22px;height:22px;display:grid}.taskbar .start b{background:#6cc3f0;border-radius:1px}.taskbar .pin{background:#3a4150;border-radius:5px;width:22px;height:22px}.taskbar .pin.on{background:#f08a3c;box-shadow:0 3px 0 -1px #f08a3c}.taskbar .clock{text-align:right;margin-left:auto;font-size:12px;line-height:1.2}.taskbar .label{color:#7d8794;margin-left:8px}@media (max-width:760px){.stage{height:400px}.w-chat,.icons{display:none}.w-doc{width:62%;height:44%;top:22%;left:6%}.hud{border:3px solid var(--ink);background:#1b202a;border-top:0;border-bottom:0;flex-flow:wrap;justify-content:center;padding:10px 8px;position:static}.hud .state{text-align:center;order:-1;width:100%}.hud button{padding:6px 10px;font-size:13px}.grow{width:calc(100% - 28px);padding:6px 10px}.taskbar .label,.icons{display:none}}.grow{z-index:3;border:2px solid var(--ink);text-align:left;width:236px;box-shadow:0 3px 0 var(--ink);background:#fff;border-radius:12px;padding:10px 12px;font-size:13px;position:absolute;top:14px;left:14px}.grow b{font-size:14px}.grow .bar{border:2px solid var(--ink);background:#fff;border-radius:6px;height:12px;margin:6px 0 4px;overflow:hidden}.grow .bar i{background:repeating-linear-gradient(90deg,var(--accent) 0 8px,#ffb070 8px 16px);width:0;height:100%;transition:width .4s;display:block}.grow .steps{color:var(--sub);justify-content:space-between;font-size:12px;display:flex}.grow .steps span.on{color:var(--ink);font-weight:800}.picker{flex-wrap:wrap;justify-content:center;gap:8px;margin:16px 0 0;display:flex}.picker button{border:2px solid var(--ink);font:inherit;cursor:pointer;box-shadow:0 3px 0 var(--ink);background:#fff;border-radius:999px;align-items:center;gap:6px;padding:4px 12px 4px 6px;font-size:14px;font-weight:700;display:flex}.picker button.on{background:var(--ink);color:#fff}.picker canvas{width:32px;height:32px;image-rendering:pixelated}.hint{text-align:center;color:var(--sub);margin:14px 0 0;font-size:14.5px}section{padding:88px 0 0}h2{letter-spacing:-.03em;text-align:center;margin:0 0 10px;font-size:clamp(26px,3.4vw,38px);line-height:1.25}.sub{text-align:center;max-width:600px;color:var(--sub);margin:0 auto 36px}.grid{grid-template-columns:repeat(3,1fr);gap:18px;display:grid}@media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:560px){.grid{grid-template-columns:1fr}}.parade{flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:6px;margin:26px auto 0;display:flex}.parade canvas{width:64px;height:64px;image-rendering:pixelated}.evo{border:2px solid var(--ink);max-width:900px;box-shadow:0 5px 0 var(--ink);background:#fff;border-radius:22px;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:4px;margin:0 auto;padding:28px 16px 20px;display:flex}.evo .st{text-align:center;width:150px}.evo canvas{width:128px;height:128px;image-rendering:pixelated;margin:0 auto;display:block}.evo b{font-size:16px;display:block}.evo span{color:var(--sub);font-size:13.5px}.evo .arrow{color:var(--accent);align-self:center;padding-bottom:40px;font-size:26px;font-weight:800}.evo-tabs{flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 16px;display:flex}.evo-tabs button{border:2px solid var(--ink);font:inherit;cursor:pointer;background:#fff;border-radius:999px;padding:5px 14px;font-size:14px;font-weight:700}.evo-tabs button.on{background:var(--accent);color:#fff;border-color:var(--accent)}.xp{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;max-width:900px;margin:18px auto 0;display:grid}.xp div{background:var(--soft);border-radius:14px;padding:12px 14px;font-size:15px}.xp b{color:#b6571a;margin-right:6px}h2:after{content:"";background:repeating-linear-gradient(90deg,var(--accent) 0 6px,transparent 6px 12px);width:48px;height:6px;margin:12px auto 0;display:block}.final h2:after{background:repeating-linear-gradient(90deg,#fff 0 6px,#0000 6px 12px)}.card{border:2px solid var(--ink);background:var(--card);box-shadow:0 5px 0 var(--ink);border-radius:18px;padding:22px}.card canvas{width:112px;height:112px;image-rendering:pixelated;margin:-6px 0 6px -6px;display:block}.card h3{letter-spacing:-.01em;margin:0 0 6px;font-size:19px}.card p{color:var(--sub);margin:0;font-size:15.5px}.flow{flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 6px;display:flex}.flow span{border:2px solid var(--ink);background:#fff;border-radius:999px;padding:6px 14px;font-size:15px;font-weight:700}.flow span.hot{background:#ffd9d2}.flow span.good{background:#dcf0d3}.flow i{color:var(--sub);font-style:normal}.levels{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;display:grid}.level{background:var(--soft);border-radius:18px;padding:20px 22px}.level b{font-size:18px;display:block}.level span{color:var(--sub);font-size:15px}.level.def{outline:3px solid var(--accent)}.chars{flex-wrap:wrap;justify-content:center;gap:18px;display:flex}.char{border:2px solid var(--ink);text-align:center;width:236px;box-shadow:0 5px 0 var(--ink);background:#fff;border-radius:18px;padding:18px}.char canvas{width:120px;height:120px;image-rendering:pixelated}.char b{font-size:18px;display:block}.char span{color:var(--sub);font-size:14.5px}.tag{color:#2f6b2f;background:#dcf0d3;border-radius:999px;margin-top:8px;padding:1px 10px;font-size:12.5px;font-weight:700;display:inline-block}.tag.soon{color:#6b3fa0;background:#eee5f7}.privacy{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;max-width:760px;margin:0 auto;display:grid}.privacy div{border:1px solid var(--line);background:#fff;border-radius:14px;padding:16px 18px;font-size:15.5px}.privacy b{display:block}details{border:1px solid var(--line);background:#fff;border-radius:14px;max-width:760px;margin:0 auto 10px;padding:16px 20px}summary{cursor:pointer;font-weight:700}details p{color:var(--sub);margin:10px 0 0;font-size:15.5px}.final{text-align:center;background:var(--ink);color:#fff;margin-top:96px;padding:64px 24px}.final h2{color:#fff}.final .btn{background:var(--accent);border-color:var(--accent)}.final p{color:#cdbfae}footer{text-align:center;color:#9c8f80;background:var(--ink);padding:28px 24px 48px;font-size:13.5px}@media (max-width:720px){nav .links{display:none}.stage{height:360px}.fake{width:70%}}</style>
-  <script type="module" crossorigin src="/pomoya-site/assets/landing-D5IDt3qd.js"></script>
+<style>:root{--bg:#fafafc;--surface:#fff;--ink:#1d1d22;--muted:#6c6c74;--faint:#a0a0a8;--hair:#14141e1a;--fill:#0000000e;--fill-hover:#00000016;--inset:#e7e7ec;--focus:#e8492f;--font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Pretendard","Noto Sans KR","Segoe UI","Malgun Gothic",system-ui,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--font);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word;margin:0}a{color:inherit}canvas[data-sprite]{image-rendering:pixelated}.wrap{max-width:1040px;margin:0 auto;padding:0 24px}.btn{background:var(--fill);height:44px;color:var(--ink);font:inherit;cursor:pointer;white-space:nowrap;border:0;border-radius:999px;justify-content:center;align-items:center;gap:8px;padding:0 22px;font-size:15px;font-weight:600;text-decoration:none;transition:background .12s,opacity .12s;display:inline-flex}.btn:hover{background:var(--fill-hover)}.btn.primary{background:var(--ink);color:#fff}.btn.primary:hover{opacity:.86}.btn small{opacity:.7;font-size:12.5px;font-weight:500}.btn:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}nav{align-items:center;gap:28px;height:64px;display:flex}.logo{letter-spacing:-.01em;align-items:center;gap:8px;font-size:17px;font-weight:700;text-decoration:none;display:flex}.logo canvas{width:32px;height:32px}nav .links{color:var(--muted);gap:22px;font-size:14px;display:flex}nav .links a{text-decoration:none}nav .links a:hover{color:var(--ink)}nav .get{height:34px;margin-left:auto;padding:0 16px;font-size:13.5px}header.hero{text-align:center;padding:56px 0 0}.parade{justify-content:center;align-items:flex-end;gap:4px;height:72px;display:flex}.parade canvas{width:72px;height:72px}.eyebrow{color:var(--muted);align-items:center;gap:8px;margin-top:18px;font-size:13px;font-weight:500;display:inline-flex}.eyebrow:before{content:"";background:#34c759;border-radius:50%;width:6px;height:6px}h1{letter-spacing:-.035em;text-wrap:balance;max-width:860px;margin:14px auto 16px;font-size:clamp(36px,6vw,64px);font-weight:700;line-height:1.12}h1 .mute{color:var(--faint)}.lede{max-width:560px;color:var(--muted);margin:0 auto;font-size:18px}.cta{flex-wrap:wrap;justify-content:center;gap:10px;margin:30px 0 12px;display:flex}.note{color:var(--muted);margin:0;font-size:13.5px}.note a{color:var(--ink);text-underline-offset:3px}.demo{max-width:1040px;margin:48px auto 0;padding:0 24px}.screen{box-shadow:0 0 0 .5px var(--hair),0 30px 70px #1e1e3c24;background:linear-gradient(165deg,#e3e6ef 0%,#ece9f1 52%,#f4ede9 100%);border-radius:20px;position:relative;overflow:hidden}.stage{height:440px;position:relative}.stage canvas#pet{position:absolute;top:0;left:0}.win{text-align:left;background:#ffffffeb;border-radius:12px;width:44%;height:60%;position:absolute;top:13%;left:9%;overflow:hidden;box-shadow:0 0 0 .5px #0000001f,0 16px 40px #1e1e3c24}.win .bar{border-bottom:.5px solid var(--hair);height:34px;color:var(--muted);align-items:center;gap:6px;padding:0 12px;font-size:12px;display:flex}.win .bar i{background:#d9d9df;border-radius:50%;width:10px;height:10px}.win .bar span{text-overflow:ellipsis;white-space:nowrap;min-width:0;margin-left:8px;overflow:hidden}.win h5{color:var(--ink);margin:18px 20px 10px;font-size:15px;font-weight:600}.win .ln{background:#ececf1;border-radius:4px;height:7px;margin:10px 20px}.status{z-index:3;-webkit-backdrop-filter:blur(18px)saturate(1.4);backdrop-filter:blur(18px)saturate(1.4);width:236px;box-shadow:0 0 0 .5px var(--hair),0 8px 24px #1e1e3c1a;text-align:left;background:#fafafccc;border-radius:14px;padding:12px 14px;position:absolute;top:16px;right:16px}.status-top{justify-content:space-between;align-items:baseline;gap:8px;font-size:13.5px;display:flex}.status-top b{font-weight:600}.status-top span{color:var(--muted);white-space:nowrap;align-items:center;gap:5px;font-size:12px;display:inline-flex}.status-top span:before{content:"";background:var(--mood,#34c759);border-radius:50%;width:6px;height:6px}.status .bar{background:var(--inset);border-radius:2px;height:3px;margin:9px 0 6px;overflow:hidden}.status .bar i{background:var(--focus);width:0;height:100%;transition:width .4s;display:block}.status-sub{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}.dock{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:.5px solid var(--hair);background:#ffffff8c;align-items:center;gap:8px;height:44px;padding:0 16px;display:flex}.dock i{background:#00000014;border-radius:6px;width:22px;height:22px}.dock i.on{background:var(--ink)}.dock .clock{color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto;font-size:12px}.controls{flex-direction:column;align-items:center;gap:14px;margin-top:22px;display:flex}.seg{background:var(--fill);border-radius:12px;padding:3px;display:inline-flex}.seg button{height:36px;color:var(--ink);font:inherit;cursor:pointer;background:0 0;border:0;border-radius:9px;align-items:center;gap:6px;padding:0 14px 0 8px;font-size:14px;font-weight:500;display:flex}.seg button canvas{width:28px;height:28px}.seg button.on{background:var(--surface);font-weight:600;box-shadow:0 1px 2px #0000001f,0 0 0 .5px #0000000d}.actions{flex-wrap:wrap;justify-content:center;gap:8px;display:flex}.actions .btn{height:36px;padding:0 16px;font-size:14px}.actions .sep{background:var(--hair);align-self:center;width:.5px;height:20px;margin:0 4px}.hint{text-align:center;color:var(--muted);margin:0;font-size:13.5px}section{padding:112px 0 0}h2{letter-spacing:-.03em;text-align:center;text-wrap:balance;margin:0 0 12px;font-size:clamp(28px,3.6vw,40px);font-weight:700;line-height:1.2}.sub{text-align:center;max-width:560px;color:var(--muted);margin:0 auto 40px;font-size:16.5px}.grid{grid-template-columns:repeat(3,1fr);gap:16px;display:grid}@media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:560px){.grid{grid-template-columns:1fr}}.card{background:var(--surface);box-shadow:0 0 0 .5px var(--hair),0 4px 14px #1e1e3c0a;border-radius:16px;padding:22px 22px 24px}.card canvas{width:80px;height:80px;margin:-4px 0 10px -6px;display:block}.card h3{letter-spacing:-.01em;margin:0 0 6px;font-size:17px;font-weight:600}.card p{color:var(--muted);margin:0;font-size:14.5px}.evo-tabs{justify-content:center;margin:0 0 20px;display:flex}.evo-tabs .seg button{padding:0 16px}.evo{background:var(--surface);max-width:920px;box-shadow:0 0 0 .5px var(--hair),0 4px 14px #1e1e3c0a;border-radius:20px;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:6px;margin:0 auto;padding:36px 16px 28px;display:flex}.evo .st{text-align:center;width:160px}.evo canvas{width:128px;height:128px;margin:0 auto 6px;display:block}.evo b{font-size:15px;font-weight:600;display:block}.evo span{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px}.evo .arrow{color:var(--faint);align-self:center;padding-bottom:44px;font-size:20px}.xp{background:var(--hair);max-width:920px;box-shadow:0 0 0 .5px var(--hair);border-radius:14px;grid-template-columns:repeat(4,1fr);gap:1px;margin:16px auto 0;display:grid;overflow:hidden}@media (max-width:720px){.xp{grid-template-columns:repeat(2,1fr)}}.xp div{background:var(--surface);color:var(--muted);padding:14px 16px;font-size:14px}.xp b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:20px;font-weight:600;display:block}.fine{text-align:center;max-width:640px;color:var(--muted);margin:16px auto 0;font-size:14px}.flow{flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 6px;max-width:860px;margin:0 auto;display:flex}.flow span{background:var(--surface);height:36px;box-shadow:0 0 0 .5px var(--hair);border-radius:999px;align-items:center;gap:7px;padding:0 14px;font-size:14.5px;font-weight:500;display:inline-flex}.flow span.hot:before,.flow span.good:before{content:"";background:#ff453a;border-radius:50%;width:6px;height:6px}.flow span.good:before{background:#34c759}.flow i{color:var(--faint);font-style:normal}.levels{grid-template-columns:repeat(3,1fr);gap:16px;display:grid}@media (max-width:720px){.levels{grid-template-columns:1fr}}.level{background:var(--surface);box-shadow:0 0 0 .5px var(--hair);border-radius:16px;padding:20px 22px}.level b{align-items:center;gap:8px;font-size:17px;font-weight:600;display:flex}.level span{color:var(--muted);font-size:14.5px}.level.def{box-shadow:0 0 0 1.5px var(--ink)}.level.def b:after{content:"기본값";color:var(--muted);font-size:12px;font-weight:500}.chars{grid-template-columns:repeat(4,1fr);gap:16px;display:grid}@media (max-width:900px){.chars{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.chars{grid-template-columns:1fr}}.char{background:var(--surface);text-align:center;box-shadow:0 0 0 .5px var(--hair),0 4px 14px #1e1e3c0a;border-radius:16px;padding:20px 16px 22px}.char canvas{image-rendering:pixelated}.char b{margin-top:10px;font-size:17px;font-weight:600;display:block}.char span{color:var(--muted);font-size:14px}.tag{color:var(--muted);margin-top:8px;font-size:12.5px;font-weight:500;display:inline-block}.tag.soon{color:var(--faint)}.privacy{grid-template-columns:repeat(2,1fr);gap:16px;max-width:820px;margin:0 auto;display:grid}@media (max-width:640px){.privacy{grid-template-columns:1fr}}.privacy div{background:var(--surface);box-shadow:0 0 0 .5px var(--hair);color:var(--muted);border-radius:16px;padding:20px 22px;font-size:14.5px}.privacy b{color:var(--ink);margin-bottom:4px;font-size:16px;font-weight:600;display:block}.faq{background:var(--surface);max-width:760px;box-shadow:0 0 0 .5px var(--hair);border-radius:16px;margin:0 auto;overflow:hidden}details{padding:0 22px;position:relative}details+details:before{content:"";background:var(--hair);height:.5px;position:absolute;top:0;left:22px;right:0}summary{cursor:pointer;justify-content:space-between;align-items:center;gap:12px;min-height:56px;font-weight:600;list-style:none;display:flex}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--faint);flex:none;font-size:20px;font-weight:300}details[open] summary:after{content:"−"}details p{color:var(--muted);margin:0 0 18px;font-size:15px}.final{text-align:center;border-top:.5px solid var(--hair);margin-top:120px;padding:80px 24px 72px}.final p{color:var(--muted);margin:0 0 24px}.final .cta{margin:0}footer{text-align:center;color:var(--faint);padding:24px 24px 48px;font-size:13px}@media (max-width:760px){nav .links,.lede br{display:none}.stage{height:380px}.win{width:62%;height:46%;top:28%;left:6%}.status{width:auto;top:12px;left:12px;right:12px}.seg{flex-wrap:wrap;justify-content:center}.actions .sep,.evo .arrow{display:none}.evo .st{width:45%}}</style>
+  <script type="module" crossorigin src="/pomoya-site/assets/landing-B6MWe8wE.js"></script>
 </head>
 <body>
 <div class="wrap">
   <nav>
-    <a class="logo" href="#"><canvas data-sprite="cat-1:idle" width="32" height="32"></canvas>뽀모야</a>
-    <div class="links"><a href="#features">기능</a><a href="#grow">성장</a><a href="#day">펫의 하루</a><a href="#characters">캐릭터</a><a href="#privacy">프라이버시</a><a href="#faq">FAQ</a></div>
+    <a class="logo" href="#"><canvas data-sprite="cat-2:study" width="32" height="32"></canvas>뽀모야</a>
+    <div class="links"><a href="#features">집중</a><a href="#grow">성장</a><a href="#characters">캐릭터</a><a href="#privacy">프라이버시</a><a href="#faq">FAQ</a></div>
+    <a class="btn primary get" href="#download">받기</a>
   </nav>
 </div>
 
 <header class="hero">
   <div class="wrap">
-    <span class="pill">Windows · macOS 미리보기 버전</span>
-    <h1>밥 안 주면 <em>마우스까지 기어올라오는</em> 데스크톱 펫</h1>
-    <p class="lede">일하는 화면 한구석을 돌아다니는 작은 픽셀 친구. 평소엔 얌전하지만, 굶기면 화면을 타고 올라와 커서에 매달려 떼를 씁니다.</p>
-    <div class="cta">
-      <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya-setup.exe"><span>Windows용 받기</span><small>미리보기 0.1.1</small></a>
-      <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya.dmg"><span>macOS용 받기</span><small>미리보기 0.1.1 · universal</small></a>
-      <a class="btn ghost" href="#demo">지금 여기서 놀아 보기 ↓</a>
-    </div>
-    <p class="note" style="margin-top:10px"><b>0.0.13에서 돌봄이 새로 짜였습니다.</b> 집중해 모은 에너지로 밥·놀이를 주고, 종마다 다른 장난감을 사서 놓고, 놀아주기는 마우스 곁에서 종마다 다른 장면으로 벌어집니다.</p>
-    <p class="note" style="margin-top:6px">아직 서명 전이라 처음 열 때 한 번 막힙니다. Windows는 "추가 정보 → 실행", macOS는 시스템 설정 → 개인정보 보호 및 보안에서 "확인 없이 열기"입니다. <a href="https://github.com/xo0449/pomoya-site/releases/latest">여는 법과 파일 해시</a></p>
     <div class="parade" id="parade"></div>
-    <p class="note" style="margin-top:18px">아래는 그림이 아니라 실제 앱과 같은 엔진입니다. 마우스를 올려 보세요.</p>
+    <div class="eyebrow">Windows · macOS 미리보기 0.1.2</div>
+    <h1><span class="mute">집중할수록 자라는</span><br>나만의 친구</h1>
+    <p class="lede">바탕화면에 사는 픽셀 친구와 함께하는 뽀모도로 타이머.<br>모인 시간으로 밥과 놀이를 주며 아기에서 어른까지 키워요.</p>
+    <div class="cta" id="download">
+      <a class="btn primary" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya.dmg"><span>macOS용 받기</span><small>미리보기 0.1.2 · universal</small></a>
+      <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya-setup.exe"><span>Windows용 받기</span><small>미리보기 0.1.2</small></a>
+    </div>
+    <p class="note">아직 서명 전이라 처음 열 때 한 번 막힙니다. <a href="https://github.com/xo0449/pomoya-site/releases/latest">여는 법과 파일 해시</a></p>
   </div>
-  <div class="stage-wrap" id="demo">
-    <div class="stage" id="stage">
-      <div class="cloud" style="left:9%;top:54px;width:56px"></div><div class="cloud" style="left:58%;top:34px;width:72px"></div><div class="cloud" style="left:82%;top:120px;width:48px"></div>
-      <div class="hills"></div>
-      <div class="icons"><div class="ico"><i></i>내 문서</div><div class="ico txt"><i></i>할일.txt</div><div class="ico bin"><i></i>휴지통</div></div>
-      <div class="fake w-doc"><div class="bar"><i></i><i></i><i></i><span>보고서_최종_진짜최종.docx</span></div><h5>3분기 실적 보고</h5><div class="ln" style="width:72%"></div><div class="ln" style="width:86%"></div><div class="ln" style="width:58%"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:44%"></div><div class="ln" style="width:70%"></div></div>
-      <div class="fake w-chat"><div class="bar"><i></i><i></i><i></i><span>팀 채팅</span></div><div class="msg">보고서 언제 돼요?</div><div class="msg me">펫이 마우스에 매달려서요…</div><div class="msg">밥부터 주세요</div></div>
-      <canvas id="pet"></canvas>
-      <div class="grow"><b id="g-name">…</b><div class="bar"><i id="g-bar"></i></div><div class="steps" id="g-steps"><span>아기</span><span>꼬마</span><span>청소년</span><span>어른</span></div></div>
+
+  <div class="demo" id="demo">
+    <div class="screen">
+      <div class="stage" id="stage">
+        <div class="win"><div class="bar"><i></i><i></i><i></i><span>보고서_최종_진짜최종.docx</span></div><h5>3분기 실적 보고</h5><div class="ln" style="width:72%"></div><div class="ln" style="width:86%"></div><div class="ln" style="width:58%"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:44%"></div></div>
+        <canvas id="pet"></canvas>
+        <div class="status" aria-live="polite"><div class="status-top"><b id="g-name">…</b><span id="hud-state">…</span></div><div class="bar"><i id="g-bar"></i></div><div class="status-sub" id="g-sub"></div></div>
+      </div>
+      <div class="dock"><i></i><i></i><i class="on"></i><i></i><span class="clock" id="clock"></span></div>
     </div>
-    <div class="hud">
-      <div class="state" id="hud-state">…</div>
-      <button id="play" class="main">놀아주기</button>
-      <button id="shop">내 캐릭터 · 상점</button>
-      <button id="focus">집중 타이머 열기</button>
-      <button id="starve">굶기기</button>
-      <button id="feed">밥 주기</button>
-      <button id="grow">에너지 +50</button>
-      <button id="poop">똥 3개 방치하기</button>
-      <button id="clean">전부 치우기</button>
+    <div class="controls">
+      <div class="seg" id="picker" role="group" aria-label="캐릭터"></div>
+      <div class="actions">
+        <button class="btn" id="focus">집중 타이머</button>
+        <button class="btn" id="shop">내 캐릭터</button>
+        <span class="sep" aria-hidden="true"></span>
+        <button class="btn" id="feed">밥 주기</button>
+        <button class="btn" id="play">놀아 주기</button>
+        <button class="btn" id="starve">굶기기</button>
+        <button class="btn" id="poop">똥 놓기</button>
+      </div>
+      <p class="hint">실제 앱과 같은 엔진입니다. 집중 타이머를 열어 시작해 보거나, 펫을 오른쪽 클릭해 메뉴를 열어 보세요.</p>
     </div>
-    <div class="taskbar"><div class="start"><b></b><b></b><b></b><b></b></div><div class="pin"></div><div class="pin"></div><div class="pin on"></div><span class="label">작업표시줄 — 펫은 이 위를 걸어 다닙니다</span><div class="clock" id="clock"></div></div>
-    <div class="picker" id="picker"></div>
-    <p class="hint">펫 클릭: 쓰다듬기 · 끌어서 옮기기 · 우클릭: 메뉴(밥·놀이) · 산 물건: 클릭하면 바로 쓰고, 끌면 옮겨요 · 놀이 중 우클릭: 그만 · 똥 클릭: 치우기</p>
   </div>
 </header>
 
 <section id="features"><div class="wrap">
-  <h2>귀엽기만 한 게 아니라, 성질이 있습니다</h2>
-  <p class="sub">다마고치를 책상 위 화면으로 옮겼습니다. 돌봄은 가볍게, 반응은 확실하게.</p>
+  <h2>집중이 먼저, 돌봄은 그다음</h2>
+  <p class="sub">집중하는 동안 친구는 방해하지 않습니다. 집중한 시간이 쌓여 친구를 돌보는 힘이 됩니다.</p>
   <div class="grid">
-    <div class="card"><canvas data-sprite="cat-1:walk" width="32" height="32"></canvas><h3>화면 위를 돌아다녀요</h3><p>작업표시줄 위를 걷고, 앉고, 꾸벅꾸벅 좁니다. 먹고 자고 구석에서 볼일도 봅니다. 포커스를 뺏지 않고, 펫이 없는 곳의 클릭은 그대로 통과합니다.</p></div>
-    <div class="card"><canvas data-sprite="cat-1:climb" width="32" height="32"></canvas><h3>굶기면 기어올라와요</h3><p>끙차끙차 화면을 타고 올라옵니다. 가끔 미끄러지고, 커서를 빨리 흔들면 손을 놓치고 떨어집니다.</p></div>
-    <div class="card"><canvas data-sprite="cat-1:hang" width="32" height="32"></canvas><h3>커서에 매달려 떼써요</h3><p>배고프면 밥 줄 때까지 버둥댑니다. 그래도 커서 끝은 절대 가리지 않고, 집중 중엔 조르지 않습니다. 클릭하면 쓰다듬어 1분은 쉽니다.</p></div>
-    <div class="card"><canvas data-sprite="cat-1:happy" width="32" height="32"></canvas><h3>놀아주면 장면이 벌어져요</h3><p>고양이는 레이저·깃털 낚싯대·털실·상자, 토끼는 당근·클로버·굴, 강아지는 테니스공·뼈다귀·개집, 병아리는 모이·지렁이·물웅덩이… 종마다 다른 장면이 마우스 곁에서 벌어집니다. 매달리듯 마우스를 따라오는 따라다니기는 모든 종에 있고, 우클릭이나 ESC로 끝냅니다.</p></div>
-    <div class="card"><canvas data-sprite="rabbit-2:sit" width="32" height="32"></canvas><h3>상점에서 사서 놓아요</h3><p>집중해 모은 에너지로 종마다 다른 장난감과 자리, 간식을 삽니다. 산 물건은 마우스로 옮기고, 누르면 펫이 바로 씁니다. 장난감은 밀고 툭 치고 덮치고 올라앉습니다.</p></div>
-    <div class="card"><canvas data-sprite="cat-2:study" width="32" height="32"></canvas><h3>같이 집중해요</h3><p>5분에서 120분까지 5분 단위로 정하면 펫도 옆에서 책을 폅니다. 그동안은 조르지 않아요. 무엇에 집중했는지 카테고리를 붙이면 기록으로 쌓입니다.</p></div>
-    <div class="card"><canvas data-sprite="dog-3:study" width="32" height="32"></canvas><h3>집중한 시간이 돌봄에너지가 돼요</h3><p>실제로 집중한 5분마다 에너지 1, 목표를 끝까지 채우면 5분마다 1을 더 받습니다. 5분이 안 되게 남은 시간도 다음 집중으로 이어집니다. 그 에너지로 캐릭터를 돌보고 키웁니다.</p></div>
+    <div class="card"><canvas data-sprite="cat-2:study" width="32" height="32"></canvas><h3>옆에서 같이 집중해요</h3><p>15·25·50·90분이나 원하는 시간을 고르면 친구도 옆에서 책을 폅니다. 집중하는 동안엔 조르지도, 매달리지도 않습니다.</p></div>
+    <div class="card"><canvas data-sprite="dog-3:study" width="32" height="32"></canvas><h3>집중한 시간이 에너지가 돼요</h3><p>실제로 집중한 5분마다 돌봄에너지 1, 끝까지 채우면 5분마다 1을 더 받습니다. 5분이 안 되게 남은 시간도 다음 집중으로 이어집니다.</p></div>
+    <div class="card"><canvas data-sprite="rabbit-2:sit" width="32" height="32"></canvas><h3>하루가 기록으로 남아요</h3><p>무엇에 집중했는지 카테고리를 붙이면 하루 흐름과 주·월 기록으로 쌓입니다. 누구와 함께했는지도 남습니다.</p></div>
+    <div class="card"><canvas data-sprite="cat-1:happy" width="32" height="32"></canvas><h3>그 에너지로 돌보고 키워요</h3><p>밥을 주고 놀아 주면 친구가 아기에서 어른까지 네 번 모습을 바꿉니다. 종마다 다른 장난감과 자리를 사서 놓을 수도 있어요.</p></div>
+    <div class="card"><canvas data-sprite="cat-1:walk" width="32" height="32"></canvas><h3>쉬는 동안엔 화면을 돌아다녀요</h3><p>작업표시줄 위를 걷고, 앉고, 꾸벅꾸벅 좁니다. 포커스를 뺏지 않고, 친구가 없는 곳의 클릭은 그대로 통과합니다.</p></div>
+    <div class="card"><canvas data-sprite="cat-1:hang" width="32" height="32"></canvas><h3>굶기면 매달려 떼써요</h3><p>쉬는 시간에 배고프면 화면을 타고 올라와 커서에 매달립니다. 얼마나 조를지는 직접 정할 수 있어요.</p></div>
   </div>
 </div></section>
 
 <section id="grow"><div class="wrap">
   <h2>돌보는 만큼 자랍니다</h2>
-  <p class="sub">시간이 지난다고 크지 않습니다. 집중해 모은 에너지로 밥과 놀이를 주면 성장 포인트가 쌓입니다. 아기 → 꼬마 5 → 청소년 50 → 어른 200.</p>
-  <div class="evo-tabs" id="evo-tabs"></div>
+  <p class="sub">시간이 지난다고 크지 않습니다. 집중해 모은 에너지로 밥과 놀이를 주면 성장 포인트가 쌓입니다.</p>
+  <div class="evo-tabs"><div class="seg" id="evo-tabs" role="group" aria-label="캐릭터"></div></div>
   <div class="evo" id="evo"></div>
-  <div class="xp"><div><b>+3</b>밥 주기 (에너지 3)</div><div><b>+2</b>놀아주기 (에너지 2)</div><div><b>ϟ1</b>실제로 집중한 5분마다</div><div><b>ϟ+1</b>목표를 끝까지 채우면 5분마다 더</div></div>
-  <p class="hint">배부르면(80 이상) 밥을 안 받고, 배고프면 놀지 않습니다. 하트는 따로 쌓여 친밀도(낯섦 → 친함 → 단짝 → 가족 → 평생)가 되고, 친함부터 켤 때 달려와 인사합니다.</p>
+  <div class="xp"><div><b>+3</b>밥 주기 (에너지 3)</div><div><b>+2</b>놀아 주기 (에너지 2)</div><div><b>ϟ 1</b>실제로 집중한 5분마다</div><div><b>ϟ +1</b>끝까지 채우면 5분마다 더</div></div>
+  <p class="fine">배부르면(80 이상) 밥을 안 받고, 배고프면 놀지 않습니다. 하트는 따로 쌓여 친밀도(낯섦 → 친함 → 단짝 → 가족 → 평생)가 됩니다.</p>
 </div></section>
 
 <section id="day"><div class="wrap">
@@ -93,17 +89,16 @@
   <p class="sub">회의 중 화면 공유에서 펫이 커서에 매달려 있으면 곤란하니까요.</p>
   <div class="levels">
     <div class="level"><b>얌전히</b><span>바닥에서 발만 구릅니다. 절대 올라오지 않아요.</span></div>
-    <div class="level def"><b>보통 · 기본값</b><span>올라와서 매달리지만 1분이면 포기하고 내려갑니다.</span></div>
+    <div class="level def"><b>보통</b><span>올라와서 매달리지만 1분이면 포기하고 내려갑니다.</span></div>
     <div class="level"><b>끈질기게</b><span>밥 줄 때까지 안 내려갑니다. 각오하세요.</span></div>
   </div>
-  <p class="hint">"30분만" 미루기와 조용히 모드도 있습니다. 켜자마자 조르지도 않습니다.</p>
+  <p class="fine">"30분만 기다려 줘"와 조용히 모드도 있습니다. 켜자마자 조르지도 않습니다.</p>
 </div></section>
 
 <section id="characters"><div class="wrap">
   <h2>캐릭터마다 성격이 달라요</h2>
-  <p class="sub">걷는 속도, 낮잠 길이, 등반 실력이 제각각입니다. 미리보기 동안에는 여덟 마리를 모두 데려올 수 있습니다.</p>
+  <p class="sub">걷는 속도, 낮잠 길이, 등반 실력이 제각각입니다. 미리보기 동안에는 네 마리를 모두 데려올 수 있습니다.</p>
   <div class="chars" id="chars"></div>
-  <p class="hint">모든 친구는 아기에서 어른까지 네 번 모습이 바뀝니다. 강아지는 두건을 두르고, 병아리는 알껍데기를 벗고 볏이 납니다.</p>
 </div></section>
 
 <section id="privacy"><div class="wrap">
@@ -119,11 +114,13 @@
 
 <section id="faq"><div class="wrap">
   <h2>자주 묻는 질문</h2><p class="sub"></p>
+  <div class="faq">
   <details><summary>언제 나오나요?</summary><p>아직 날짜를 약속하지 않습니다. 펫의 행동은 이 페이지에서 보시는 대로 완성되어 있고, Windows와 macOS 모두 미리보기 버전을 위에서 받을 수 있습니다. 아직 서명 전이라 처음 열 때 한 번 막힙니다. 여는 법은 받는 곳에 적어 두었습니다.</p></details>
-  <details><summary>놀아주기는 어떻게 하나요?</summary><p>펫을 우클릭하고 "놀아주기"를 누르거나, 내 캐릭터 창에서 누릅니다. 에너지 2를 쓰고 30초 동안 종마다 다른 장면이 마우스 곁에서 벌어집니다. 배고프면 못 놀아요. 그만두려면 어디서든 우클릭이나 ESC.</p></details>
+  <details><summary>집중 25분, 휴식 5분처럼 반복할 수 있나요?</summary><p>네. 집중 탭의 반복 모드를 켜면 집중이 끝난 뒤 정한 휴식(1~60분)으로 넘어가고, 휴식이 끝나면 같은 길이로 다시 집중하며 소리로 알려 줍니다. 휴식 시간은 에너지와 오늘 집중에 들어가지 않습니다.</p></details>
+  <details><summary>놀아주기는 어떻게 하나요?</summary><p>펫을 오른쪽 클릭하고 "놀아 주기"를 누르거나, 내 캐릭터 창에서 누릅니다. 에너지 2를 쓰고 30초 동안 종마다 다른 장면이 마우스 곁에서 벌어집니다. 배고프면 못 놀아요. 그만두려면 어디서든 우클릭이나 ESC.</p></details>
   <details><summary>배는 얼마나 빨리 고파지나요?</summary><p>포만감 100에서 켜져 있으면 시간당 10, 꺼져 있으면 4씩 줄어요(펫도 잡니다). 60 아래면 출출, 20 아래면 배고파서 집중 중이 아닐 때 마우스로 기어올라옵니다. 밥 한 번에 50이 차고, 80 이상이면 안 받습니다. 하루 8시간 켜 두면 밥 세 번, 25분 집중 한 번이면 하루 밥값입니다.</p></details>
   <details><summary>상점은 뭘 파나요?</summary><p>종마다 장난감 하나와 자리 하나, 그리고 간식입니다. 고양이는 공과 쿠션, 토끼는 방울 링과 건초 침대처럼 다릅니다. 재화는 집중해서 모은 에너지뿐이고 밥·성장은 팔지 않습니다. 산 물건은 없어지지 않고, 마우스로 옮기거나 눌러서 바로 쓰게 할 수 있습니다.</p></details>
-  <details><summary>집중 타이머는 어디에 있나요?</summary><p>펫을 우클릭하고 "집중하기"를 누르면 열립니다. 0.0.5부터 들어갔으니 그보다 옛 버전을 쓰고 계시면 위에서 새로 받으세요. 이 페이지의 미리보기에서도 "집중 타이머 열기"로 똑같이 써 보실 수 있습니다.</p></details>
+  <details><summary>집중 타이머는 어디에 있나요?</summary><p>펫을 오른쪽 클릭하면 맨 위에 "N분 집중 시작"이 있어 바로 시작합니다. 시간을 바꾸려면 "시간 고르기…"로 창을 엽니다. 이 페이지의 미리보기에서도 "집중 타이머"로 똑같이 써 보실 수 있습니다.</p></details>
   <details><summary>macOS에서 "악성 코드가 없음을 확인할 수 없습니다"라고 뜹니다</summary><p>아직 코드 서명과 공증을 안 해서 그렇습니다. 그 창에는 "열기"가 없으니 <b>완료</b>를 누르세요("휴지통으로 이동"을 누르지 마세요). 그다음 <b>시스템 설정 → 개인정보 보호 및 보안</b>을 열고 아래로 내리면 "Pomoya이(가) 차단되었습니다" 줄 옆에 <b>확인 없이 열기</b> 버튼이 있습니다. 누르고 암호나 Touch ID로 확인하면 열립니다. 번거롭게 해서 죄송합니다.</p></details>
   <details><summary>macOS에서 Dock에 아이콘이 안 보여요</summary><p>일부러 그렇게 만들었습니다. 펫이 Dock이나 Cmd+Tab 목록을 차지하지 않게 했습니다. 잘 떴는지는 화면 아래를 걸어다니는 펫과 메뉴 막대 오른쪽의 뽀모야 아이콘으로 확인합니다. 종료도 그 메뉴 막대 아이콘에서 합니다.</p></details>
   <details><summary>모니터가 두 대인데요?</summary><p>펫이 살 모니터를 설정에서 고를 수 있습니다. 배율이 다른 모니터 사이도 됩니다. 고른 모니터를 뽑으면 주 모니터로 돌아옵니다.</p></details>
@@ -132,13 +129,16 @@
   <details><summary>무겁지 않나요?</summary><p>Tauri 기반이라 브라우저를 통째로 싣지 않습니다. 가만히 있을 때는 그리는 횟수도 줄입니다. 실제 CPU·메모리 수치는 출시 전에 재서 공개하겠습니다.</p></details>
   <details><summary>게임이나 전체 화면 영상 위에도 뜨나요?</summary><p>운영체제가 허용하는 범위까지만 뜹니다. 독점 전체 화면 게임이나 보안 화면 위는 약속하지 않습니다.</p></details>
   <details><summary>모바일도 나오나요?</summary><p>계획에 있습니다. 다만 휴대폰에서는 다른 앱 위를 돌아다닐 수 없어서, 같은 펫을 앱 안에서 돌보는 형태가 됩니다.</p></details>
+  </div>
 </div></section>
 
 <div class="final">
-  <h2>오늘도 밥은 주셨나요?</h2>
+  <h2>오늘은 누구와 집중할까요?</h2>
   <p>Windows와 macOS 미리보기 버전을 받을 수 있습니다.</p>
-  <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya-setup.exe">Windows용 받기</a>
-  <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya.dmg">macOS용 받기</a>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya.dmg">macOS용 받기</a>
+    <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya-setup.exe">Windows용 받기</a>
+  </div>
 </div>
 <footer>뽀모야 · 개발 중인 프로젝트입니다</footer>
 
