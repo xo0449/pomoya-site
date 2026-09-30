@@ -1,0 +1,26 @@
+{
+  "version": "0.1.6",
+  "source": "68a9c6342b6eaaa3eddf05eb82244058e2dabc3a",
+  "artifacts": [
+    {
+      "alias": "Pomoya.dmg",
+      "version": "0.1.6",
+      "source": "68a9c6342b6eaaa3eddf05eb82244058e2dabc3a",
+      "dirty": false,
+      "platform": "macos",
+      "runtime": "appkit",
+      "sha256": "2dfbd47cb757500630c7d1a32293841ab433a6fa499586a78aebe7beee517c63",
+      "file": "Pomoya_0.1.6_universal.dmg"
+    },
+    {
+      "alias": "Pomoya-setup.exe",
+      "version": "0.1.6",
+      "source": "68a9c6342b6eaaa3eddf05eb82244058e2dabc3a",
+      "dirty": false,
+      "platform": "windows",
+      "runtime": "tauri",
+      "sha256": "be99eee9ecfcacd22388183cf958dc76d3b96bb3799bde49d6dc93b85e3c489b",
+      "file": "Pomoya_0.1.6_x64-setup.exe"
+    }
+  ]
+}
