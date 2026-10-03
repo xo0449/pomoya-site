@@ -3,7 +3,7 @@
   "name": "강디",
   "line": "dog",
   "stage": 3,
-  "version": 6,
+  "version": 10,
   "tier": "paid",
   "source": {
     "author": "art/four/four.py (2026-09-28, 캐릭터 디자인 스킬로 평가)",
@@ -110,10 +110,93 @@
       "frames": 4,
       "frameMs": 120
     },
+    "scratch": {
+      "sheet": "scratch.png",
+      "frames": 6,
+      "frameMs": 110
+    },
+    "peck": {
+      "sheet": "peck.png",
+      "frames": 7,
+      "frameMs": 90
+    },
+    "tug": {
+      "sheet": "tug.png",
+      "frames": 6,
+      "frameMs": 130
+    },
+    "dig": {
+      "sheet": "dig.png",
+      "frames": 5,
+      "frameMs": 100
+    },
+    "shake": {
+      "sheet": "shake.png",
+      "frames": 7,
+      "frameMs": 60
+    },
+    "sniff": {
+      "sheet": "sniff.png",
+      "frames": 6,
+      "frameMs": 110
+    },
+    "hug": {
+      "sheet": "hug.png",
+      "frames": 4,
+      "frameMs": 180
+    },
+    "dustbath": {
+      "sheet": "dustbath.png",
+      "frames": 5,
+      "frameMs": 120
+    },
     "hangLimp": {
       "sheet": "hangLimp.png",
       "frames": 2,
       "frameMs": 700
+    }
+  },
+  "wear": {
+    "rows": [
+      "idle",
+      "walk",
+      "hungry",
+      "holdNose",
+      "sit",
+      "doze",
+      "study",
+      "nap",
+      "stretch",
+      "poop",
+      "dragged",
+      "fall",
+      "angry",
+      "eat",
+      "happy",
+      "play",
+      "climb",
+      "slip",
+      "hang",
+      "scratch",
+      "peck",
+      "tug",
+      "dig",
+      "shake",
+      "sniff",
+      "hug",
+      "dustbath",
+      "hangLimp"
+    ],
+    "items": {
+      "partyHat": "wear-partyHat.png",
+      "earFlower": "wear-earFlower.png",
+      "glasses": "wear-glasses.png",
+      "redGlasses": "wear-redGlasses.png",
+      "crown": "wear-crown.png",
+      "starPin": "wear-starPin.png",
+      "bowTie": "wear-bowTie.png",
+      "sweater": "wear-sweater.png",
+      "overalls": "wear-overalls.png"
     }
   }
 }
