@@ -1,6 +1,6 @@
 # 뽀모야 소개 페이지
 
-https://xo0449.github.io/pomoya-site/ 에 올라가는 빌드 결과물입니다. 직접 고치지 않습니다.
+https://www.pomoya.page/ 에 올라가는 빌드 결과물입니다. 직접 고치지 않습니다.
 고칠 곳은 private 저장소 xo0449/pomoya의 landing.html이고, scripts/deploy-site.sh가 여기로 올립니다.
 
 앱은 개발 중(pre-alpha)입니다. Windows와 macOS 미리보기 설치 파일은 이 저장소의 Release에 있습니다.
