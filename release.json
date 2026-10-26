@@ -1,26 +1,26 @@
 {
-  "version": "0.3.7",
-  "source": "d88b6b7b8af55310965cf6b19f66dc5dee3c692f",
+  "version": "1.0.2",
+  "source": "a5a2c95258475c38128c7fca298033e03963590a",
   "artifacts": [
     {
       "alias": "Pomoya.dmg",
-      "version": "0.3.7",
-      "source": "d88b6b7b8af55310965cf6b19f66dc5dee3c692f",
+      "version": "1.0.2",
+      "source": "a5a2c95258475c38128c7fca298033e03963590a",
       "dirty": false,
       "platform": "macos",
       "runtime": "appkit",
-      "sha256": "0c556ba92ff02fcd7cb286211a9244b29f41f4d16ece82c637ac6517a2327750",
-      "file": "Pomoya_0.3.7_universal.dmg"
+      "sha256": "d24da2f5fbf83f9d0ffd946dc32415a5d953646961db70a6f5745c7b9c578486",
+      "file": "Pomoya_1.0.2_universal.dmg"
     },
     {
       "alias": "Pomoya-setup.exe",
-      "version": "0.3.7",
-      "source": "d88b6b7b8af55310965cf6b19f66dc5dee3c692f",
+      "version": "1.0.2",
+      "source": "a5a2c95258475c38128c7fca298033e03963590a",
       "dirty": false,
       "platform": "windows",
       "runtime": "tauri",
-      "sha256": "c55d0ebe3232fea498b368d1752bbbcd5b60ce827849adda04cff1a1ad2ec5d9",
-      "file": "Pomoya_0.3.7_x64-setup.exe"
+      "sha256": "ed01ab4c7f79839cb6f89529a7dec8a0d7f962d9c36ab9fbe3a44ac07dddf9c7",
+      "file": "Pomoya_1.0.2_x64-setup.exe"
     }
   ]
 }

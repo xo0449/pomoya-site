@@ -3,7 +3,7 @@
   "name": "강디",
   "line": "dog",
   "stage": 3,
-  "version": 10,
+  "version": 20,
   "tier": "paid",
   "source": {
     "author": "art/four/four.py (2026-09-28, 캐릭터 디자인 스킬로 평가)",
@@ -150,6 +150,41 @@
       "frames": 5,
       "frameMs": 120
     },
+    "laptop": {
+      "sheet": "laptop.png",
+      "frames": 6,
+      "frameMs": 240
+    },
+    "write": {
+      "sheet": "write.png",
+      "frames": 6,
+      "frameMs": 380
+    },
+    "stretching": {
+      "sheet": "stretching.png",
+      "frames": 5,
+      "frameMs": 620
+    },
+    "exercise": {
+      "sheet": "exercise.png",
+      "frames": 6,
+      "frameMs": 520
+    },
+    "meditate": {
+      "sheet": "meditate.png",
+      "frames": 4,
+      "frameMs": 900
+    },
+    "run": {
+      "sheet": "run.png",
+      "frames": 4,
+      "frameMs": 110
+    },
+    "swim": {
+      "sheet": "swim.png",
+      "frames": 4,
+      "frameMs": 170
+    },
     "hangLimp": {
       "sheet": "hangLimp.png",
       "frames": 2,
@@ -185,11 +220,19 @@
       "sniff",
       "hug",
       "dustbath",
+      "laptop",
+      "write",
+      "stretching",
+      "exercise",
+      "meditate",
+      "run",
+      "swim",
       "hangLimp"
     ],
     "items": {
       "partyHat": "wear-partyHat.png",
       "earFlower": "wear-earFlower.png",
+      "dogCollar": "wear-dogCollar.png",
       "glasses": "wear-glasses.png",
       "redGlasses": "wear-redGlasses.png",
       "crown": "wear-crown.png",
