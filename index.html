@@ -4,146 +4,239 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>뽀모야 — 집중할수록 자라는 나만의 친구</title>
-<meta name="description" content="바탕화면에 사는 픽셀 친구와 함께하는 뽀모도로 타이머. 모인 시간으로 밥과 놀이를 주며 아기에서 어른까지 키워요. Windows · macOS." />
+<meta name="description" content="픽셀 펫과 함께하는 뽀모도로 타이머. 친구와 그룹에서 집중하고, 일간·주간·월간 기록을 쌓고, 모바일과 데스크톱에서 같은 펫을 키워요." />
 <link rel="icon" href="/favicon.png" />
-<style>:root{--bg:#fafafc;--surface:#fff;--ink:#1d1d22;--muted:#6c6c74;--faint:#a0a0a8;--hair:#14141e1a;--fill:#0000000e;--fill-hover:#00000016;--inset:#e7e7ec;--focus:#e8492f;--font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Pretendard","Noto Sans KR","Segoe UI","Malgun Gothic",system-ui,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--font);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word;margin:0}a{color:inherit}canvas[data-sprite]{image-rendering:pixelated}.wrap{max-width:1040px;margin:0 auto;padding:0 24px}.btn{background:var(--fill);height:44px;color:var(--ink);font:inherit;cursor:pointer;white-space:nowrap;border:0;border-radius:999px;justify-content:center;align-items:center;gap:8px;padding:0 22px;font-size:15px;font-weight:600;text-decoration:none;transition:background .12s,opacity .12s;display:inline-flex}.btn:hover{background:var(--fill-hover)}.btn.primary{background:var(--ink);color:#fff}.btn.primary:hover{opacity:.86}.btn small{opacity:.7;font-size:12.5px;font-weight:500}.btn:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}nav{align-items:center;gap:28px;height:64px;display:flex}.logo{letter-spacing:-.01em;align-items:center;gap:8px;font-size:17px;font-weight:700;text-decoration:none;display:flex}.logo canvas{width:32px;height:32px}nav .links{color:var(--muted);gap:22px;font-size:14px;display:flex}nav .links a{text-decoration:none}nav .links a:hover{color:var(--ink)}nav .get{height:34px;margin-left:auto;padding:0 16px;font-size:13.5px}header.hero{text-align:center;padding:56px 0 0}.parade{justify-content:center;align-items:flex-end;gap:4px;height:72px;display:flex}.parade canvas{width:72px;height:72px}.eyebrow{color:var(--muted);align-items:center;gap:8px;margin-top:18px;font-size:13px;font-weight:500;display:inline-flex}.eyebrow:before{content:"";background:#34c759;border-radius:50%;width:6px;height:6px}h1{letter-spacing:-.035em;text-wrap:balance;max-width:860px;margin:14px auto 16px;font-size:clamp(36px,6vw,64px);font-weight:700;line-height:1.12}h1 .mute{color:var(--faint)}.lede{max-width:560px;color:var(--muted);margin:0 auto;font-size:18px}.cta{flex-wrap:wrap;justify-content:center;gap:10px;margin:30px 0 12px;display:flex}.note{color:var(--muted);margin:0;font-size:13.5px}.note a{color:var(--ink);text-underline-offset:3px}.note code{color:var(--ink);-webkit-user-select:all;user-select:all;background:#7f7f7f1f;border-radius:6px;padding:2px 6px;font:13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.note.brew{margin-top:6px}.demo{max-width:1040px;margin:48px auto 0;padding:0 24px}.screen{box-shadow:0 0 0 .5px var(--hair),0 30px 70px #1e1e3c24;background:linear-gradient(165deg,#e3e6ef 0%,#ece9f1 52%,#f4ede9 100%);border-radius:20px;position:relative;overflow:hidden}.stage{height:440px;position:relative}.stage canvas#pet{position:absolute;top:0;left:0}.win{text-align:left;background:#ffffffeb;border-radius:12px;width:44%;height:52%;position:absolute;top:30%;left:9%;overflow:hidden;box-shadow:0 0 0 .5px #0000001f,0 16px 40px #1e1e3c24}.win .bar{border-bottom:.5px solid var(--hair);height:34px;color:var(--muted);align-items:center;gap:6px;padding:0 12px;font-size:12px;display:flex}.win .bar i{background:#d9d9df;border-radius:50%;width:10px;height:10px}.win .bar span{text-overflow:ellipsis;white-space:nowrap;min-width:0;margin-left:8px;overflow:hidden}.win h5{color:var(--ink);margin:18px 20px 10px;font-size:15px;font-weight:600}.win .ln{background:#ececf1;border-radius:4px;height:7px;margin:10px 20px}.status{z-index:3;-webkit-backdrop-filter:blur(18px)saturate(1.4);backdrop-filter:blur(18px)saturate(1.4);width:236px;box-shadow:0 0 0 .5px var(--hair),0 8px 24px #1e1e3c1a;text-align:left;background:#fafafccc;border-radius:14px;padding:12px 14px;position:absolute;top:16px;right:16px}.status-top{justify-content:space-between;align-items:baseline;gap:8px;font-size:13.5px;display:flex}.status-top b{font-weight:600}.status-top span{color:var(--muted);white-space:nowrap;align-items:center;gap:5px;font-size:12px;display:inline-flex}.status-top span:before{content:"";background:var(--mood,#34c759);border-radius:50%;width:6px;height:6px}.status .bar{background:var(--inset);border-radius:2px;height:3px;margin:9px 0 6px;overflow:hidden}.status .bar i{background:var(--focus);width:0;height:100%;transition:width .4s;display:block}.status-sub{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}.screen .dp-focus-clock{z-index:4;position:absolute!important;top:20px!important;bottom:auto!important;left:20px!important}.screen:not(.hint-done) .dp-focus-clock[data-mode=mini]:not(:hover):not(:focus-within) .clock-actions{opacity:1!important;display:flex!important}.screen:not(.hint-done) .dp-focus-clock[data-mode=mini]:not(:hover):not(:focus-within) .clock-actions>:not(.clock-view-controls):not([data-action=pause]),.screen:not(.hint-done) .dp-focus-clock[data-mode=mini]:not(.is-paused):not(.is-finished):not(:hover):not(:focus-within) .clock-actions>[data-action=pause]{display:none!important}.screen:not(.hint-done) .dp-focus-clock[data-mode=mini] .clock-view-controls{display:flex!important}.screen:not(.hint-done) .dp-focus-clock .clock-view-controls button[data-action=expand]{color:#1d1d22;background:#fc0;border-radius:999px;animation:1.1s ease-in-out infinite expand-hint}@keyframes expand-hint{0%,to{color:#1d1d22;background:#fc0}50%{color:#b38f00;background:0 0}}@media (prefers-reduced-motion:reduce){.screen:not(.hint-done) .dp-focus-clock .clock-view-controls button[data-action=expand]{animation:none}}.dock{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:.5px solid var(--hair);background:#ffffff8c;align-items:center;gap:8px;height:44px;padding:0 16px;display:flex}.dock i{background:#00000014;border-radius:6px;width:22px;height:22px}.dock i.on{background:var(--ink)}.dock .clock{color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto;font-size:12px}.controls{flex-direction:column;align-items:center;gap:14px;margin-top:22px;display:flex}.seg{background:var(--fill);border-radius:12px;padding:3px;display:inline-flex}.seg button{height:36px;color:var(--ink);font:inherit;cursor:pointer;background:0 0;border:0;border-radius:9px;align-items:center;gap:6px;padding:0 14px 0 8px;font-size:14px;font-weight:500;display:flex}.seg button canvas{width:28px;height:28px}.seg button.on{background:var(--surface);font-weight:600;box-shadow:0 1px 2px #0000001f,0 0 0 .5px #0000000d}.actions{flex-wrap:wrap;justify-content:center;gap:8px;display:flex}.actions .btn{height:36px;padding:0 16px;font-size:14px}.actions .sep{background:var(--hair);align-self:center;width:.5px;height:20px;margin:0 4px}.hint{text-align:center;color:var(--muted);margin:0;font-size:13.5px}section{padding:112px 0 0}h2{letter-spacing:-.03em;text-align:center;text-wrap:balance;margin:0 0 12px;font-size:clamp(28px,3.6vw,40px);font-weight:700;line-height:1.2}.sub{text-align:center;max-width:560px;color:var(--muted);margin:0 auto 40px;font-size:16.5px}.grid{grid-template-columns:repeat(3,1fr);gap:16px;display:grid}@media (max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:560px){.grid{grid-template-columns:1fr}}.card{background:var(--surface);box-shadow:0 0 0 .5px var(--hair),0 4px 14px #1e1e3c0a;border-radius:16px;padding:22px 22px 24px}.card canvas{width:80px;height:80px;margin:-4px 0 10px -6px;display:block}.card h3{letter-spacing:-.01em;margin:0 0 6px;font-size:17px;font-weight:600}.card p{color:var(--muted);margin:0;font-size:14.5px}.evo-tabs{justify-content:center;margin:0 0 20px;display:flex}.evo-tabs .seg button{padding:0 16px}.evo{background:var(--surface);max-width:920px;box-shadow:0 0 0 .5px var(--hair),0 4px 14px #1e1e3c0a;border-radius:20px;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:6px;margin:0 auto;padding:36px 16px 28px;display:flex}.evo .st{text-align:center;width:160px}.evo canvas{width:128px;height:128px;margin:0 auto 6px;display:block}.evo b{font-size:15px;font-weight:600;display:block}.evo span{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px}.evo .arrow{color:var(--faint);align-self:center;padding-bottom:44px;font-size:20px}.xp{background:var(--hair);max-width:920px;box-shadow:0 0 0 .5px var(--hair);border-radius:14px;grid-template-columns:repeat(4,1fr);gap:1px;margin:16px auto 0;display:grid;overflow:hidden}@media (max-width:720px){.xp{grid-template-columns:repeat(2,1fr)}}.xp div{background:var(--surface);color:var(--muted);padding:14px 16px;font-size:14px}.xp b{color:var(--ink);font-variant-numeric:tabular-nums;font-size:20px;font-weight:600;display:block}.fine{text-align:center;max-width:640px;color:var(--muted);margin:16px auto 0;font-size:14px}.flow{flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 6px;max-width:860px;margin:0 auto;display:flex}.flow span{background:var(--surface);height:36px;box-shadow:0 0 0 .5px var(--hair);border-radius:999px;align-items:center;gap:7px;padding:0 14px;font-size:14.5px;font-weight:500;display:inline-flex}.flow span.hot:before,.flow span.good:before{content:"";background:#ff453a;border-radius:50%;width:6px;height:6px}.flow span.good:before{background:#34c759}.flow i{color:var(--faint);font-style:normal}.levels{grid-template-columns:repeat(3,1fr);gap:16px;display:grid}@media (max-width:720px){.levels{grid-template-columns:1fr}}.level{background:var(--surface);box-shadow:0 0 0 .5px var(--hair);border-radius:16px;padding:20px 22px}.level b{align-items:center;gap:8px;font-size:17px;font-weight:600;display:flex}.level span{color:var(--muted);font-size:14.5px}.level.def{box-shadow:0 0 0 1.5px var(--ink)}.level.def b:after{content:"기본값";color:var(--muted);font-size:12px;font-weight:500}.chars{grid-template-columns:repeat(4,1fr);gap:16px;display:grid}@media (max-width:900px){.chars{grid-template-columns:repeat(2,1fr)}}@media (max-width:480px){.chars{grid-template-columns:1fr}}.char{background:var(--surface);text-align:center;box-shadow:0 0 0 .5px var(--hair),0 4px 14px #1e1e3c0a;border-radius:16px;padding:20px 16px 22px}.char canvas{image-rendering:pixelated}.char b{margin-top:10px;font-size:17px;font-weight:600;display:block}.char span{color:var(--muted);font-size:14px}.tag{color:var(--muted);margin-top:8px;font-size:12.5px;font-weight:500;display:inline-block}.tag.soon{color:var(--faint)}.privacy{grid-template-columns:repeat(2,1fr);gap:16px;max-width:820px;margin:0 auto;display:grid}@media (max-width:640px){.privacy{grid-template-columns:1fr}}.privacy div{background:var(--surface);box-shadow:0 0 0 .5px var(--hair);color:var(--muted);border-radius:16px;padding:20px 22px;font-size:14.5px}.privacy b{color:var(--ink);margin-bottom:4px;font-size:16px;font-weight:600;display:block}.faq{background:var(--surface);max-width:760px;box-shadow:0 0 0 .5px var(--hair);border-radius:16px;margin:0 auto;overflow:hidden}details{padding:0 22px;position:relative}details+details:before{content:"";background:var(--hair);height:.5px;position:absolute;top:0;left:22px;right:0}summary{cursor:pointer;justify-content:space-between;align-items:center;gap:12px;min-height:56px;font-weight:600;list-style:none;display:flex}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--faint);flex:none;font-size:20px;font-weight:300}details[open] summary:after{content:"−"}details p{color:var(--muted);margin:0 0 18px;font-size:15px}.final{text-align:center;border-top:.5px solid var(--hair);margin-top:120px;padding:80px 24px 72px}.final p{color:var(--muted);margin:0 0 24px}.final .cta{margin:0}footer{text-align:center;color:var(--faint);padding:24px 24px 48px;font-size:13px}@media (max-width:760px){nav .links,.lede br{display:none}.stage{height:380px}.win{width:62%;height:46%;top:28%;left:6%}.status{display:none}.screen .dp-focus-clock{width:auto!important;top:12px!important;left:12px!important;right:12px!important;transform:none!important}.win{height:34%;top:40%}.seg{flex-wrap:wrap;justify-content:center}.actions .sep,.evo .arrow{display:none}.evo .st{width:45%}}</style>
-  <script type="module" crossorigin src="/assets/landing-Bo-HRvYn.js"></script>
+<style>:root{--bg:#fbfaf8;--surface:#fff;--ink:#1d1d22;--muted:#6c6c74;--faint:#a0a0a8;--hair:#14141e1a;--fill:#0000000e;--fill-hover:#00000016;--inset:#e7e7ec;--focus:#e8492f;--font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Pretendard","Noto Sans KR","Segoe UI","Malgun Gothic",system-ui,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--font);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word;margin:0}a{color:inherit}canvas[data-sprite]{image-rendering:pixelated}.wrap{max-width:1040px;margin:0 auto;padding:0 24px}.btn{background:var(--fill);height:44px;color:var(--ink);font:inherit;cursor:pointer;white-space:nowrap;border:0;border-radius:999px;justify-content:center;align-items:center;gap:8px;padding:0 22px;font-size:15px;font-weight:600;text-decoration:none;transition:background .12s,opacity .12s;display:inline-flex}.btn:hover{background:var(--fill-hover)}.btn.primary{background:var(--ink);color:#fff}.btn.primary:hover{opacity:.86}.btn small{opacity:.7;font-size:12.5px;font-weight:500}.btn:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}nav{align-items:center;gap:28px;height:64px;display:flex}.logo{letter-spacing:-.01em;align-items:center;gap:8px;font-size:17px;font-weight:700;text-decoration:none;display:flex}.logo canvas{width:32px;height:32px}nav .links{color:var(--muted);gap:22px;font-size:14px;display:flex}nav .links a{text-decoration:none}nav .links a:hover{color:var(--ink)}nav .get{height:34px;margin-left:auto;padding:0 16px;font-size:13.5px}header.hero{padding-top:20px}.hero-panel{background:#f1ede8;border-radius:32px;grid-template-columns:1.22fr 1fr;align-items:center;gap:22px;padding:48px;display:grid}.hero-parade{align-items:flex-end;gap:4px;margin:0 0 12px;display:flex}.hero-parade canvas{width:clamp(44px,9vw,64px);height:auto;display:block}.eyebrow,.kicker{color:#56507a;margin:0 0 12px;font-size:13px;font-weight:700}.eyebrow{background:#fffaf7;border-radius:999px;padding:5px 11px;display:inline-block}h1{letter-spacing:-.055em;margin:8px 0 20px;font-size:clamp(36px,5.3vw,63px);font-weight:750;line-height:1.12}.lede{color:#57535b;max-width:405px;margin:0;font-size:17px}.cta{flex-wrap:wrap;gap:8px;margin:26px 0 12px;display:flex}.note{color:#645d67;margin:0;font-size:13px}.demo-link{color:#554383;text-underline-offset:4px;align-items:center;gap:6px;margin-top:18px;font-size:14px;font-weight:700;display:inline-flex}.hero-visual{background:radial-gradient(at 49% 44%,#eeebff,#d8d3ee 78%);border-radius:24px;place-items:center;min-width:0;padding:24px 16px;display:grid;position:relative}.phone{background:#fff;border:1px solid #dddae4;border-radius:21px;width:min(100%,204px);min-width:0;padding:4px;overflow:hidden;box-shadow:0 13px 30px #2a23452e}.phone img{border-radius:16px;width:100%;height:auto;display:block}.phone-dark{background:#16161b;border-color:#3f394a}.hero-pet{background:#fffcf6;border:1px solid #fff;border-radius:22px;place-items:center;width:90px;height:90px;display:grid;position:absolute;bottom:12%;right:6%;transform:rotate(8deg);box-shadow:0 8px 24px #2a23452c}.hero-pet canvas{width:80px;height:80px}.screen{box-shadow:0 0 0 .5px var(--hair),0 30px 70px #1e1e3c24;background:linear-gradient(165deg,#e3e6ef 0%,#ece9f1 52%,#f4ede9 100%);border-radius:20px;position:relative;overflow:hidden}.stage{height:440px;position:relative}.stage canvas#pet{position:absolute;top:0;left:0}.win{text-align:left;background:#ffffffeb;border-radius:12px;width:44%;height:52%;position:absolute;top:30%;left:9%;overflow:hidden;box-shadow:0 0 0 .5px #0000001f,0 16px 40px #1e1e3c24}.win .bar{border-bottom:.5px solid var(--hair);height:34px;color:var(--muted);align-items:center;gap:6px;padding:0 12px;font-size:12px;display:flex}.win .bar i{background:#d9d9df;border-radius:50%;width:10px;height:10px}.win .bar span{text-overflow:ellipsis;white-space:nowrap;min-width:0;margin-left:8px;overflow:hidden}.win-title{color:var(--ink);margin:18px 20px 10px;font-size:15px;font-weight:600}.win .ln{background:#ececf1;border-radius:4px;height:7px;margin:10px 20px}.status{z-index:3;-webkit-backdrop-filter:blur(18px)saturate(1.4);backdrop-filter:blur(18px)saturate(1.4);width:236px;box-shadow:0 0 0 .5px var(--hair),0 8px 24px #1e1e3c1a;text-align:left;background:#fafafccc;border-radius:14px;padding:12px 14px;position:absolute;top:16px;right:16px}.status[hidden]{display:none}.status-top{justify-content:space-between;align-items:baseline;gap:8px;font-size:13.5px;display:flex}.status-top b{font-weight:600}.status-top span{color:var(--muted);white-space:nowrap;align-items:center;gap:5px;font-size:12px;display:inline-flex}.status-top span:before{content:"";background:var(--mood,#34c759);border-radius:50%;width:6px;height:6px}.status .bar{background:var(--inset);border-radius:2px;height:3px;margin:9px 0 6px;overflow:hidden}.status .bar i{background:var(--focus);width:0;height:100%;transition:width .4s;display:block}.status-sub{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}.screen .dp-focus-clock{z-index:4;position:absolute!important;top:20px!important;bottom:auto!important;left:20px!important}.screen:not(.hint-done) .dp-focus-clock[data-mode=mini]:not(:hover):not(:focus-within) .clock-actions{opacity:1!important;display:flex!important}.screen:not(.hint-done) .dp-focus-clock[data-mode=mini]:not(:hover):not(:focus-within) .clock-actions>:not(.clock-view-controls):not([data-action=pause]),.screen:not(.hint-done) .dp-focus-clock[data-mode=mini]:not(.is-paused):not(.is-finished):not(:hover):not(:focus-within) .clock-actions>[data-action=pause]{display:none!important}.screen:not(.hint-done) .dp-focus-clock[data-mode=mini] .clock-view-controls{display:flex!important}.screen:not(.hint-done) .dp-focus-clock .clock-view-controls button[data-action=expand]{color:#1d1d22;background:#fc0;border-radius:999px;animation:1.1s ease-in-out infinite expand-hint}@keyframes expand-hint{0%,to{color:#1d1d22;background:#fc0}50%{color:#b38f00;background:0 0}}@media (prefers-reduced-motion:reduce){.screen:not(.hint-done) .dp-focus-clock .clock-view-controls button[data-action=expand]{animation:none}}.dock{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:.5px solid var(--hair);background:#ffffff8c;align-items:center;gap:8px;height:44px;padding:0 16px;display:flex}.dock i{background:#00000014;border-radius:6px;width:22px;height:22px}.dock i.on{background:var(--ink)}.dock .clock{color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto;font-size:12px}.controls{flex-direction:column;align-items:center;gap:12px;margin-bottom:16px;display:flex}.seg{background:var(--fill);border-radius:12px;padding:3px;display:inline-flex}.seg button{height:36px;color:var(--ink);font:inherit;cursor:pointer;background:0 0;border:0;border-radius:9px;align-items:center;gap:6px;padding:0 14px 0 8px;font-size:14px;font-weight:500;display:flex}.seg button canvas{width:28px;height:28px}.seg button[aria-pressed=true]{background:var(--surface);font-weight:600;box-shadow:0 1px 2px #0000001f,0 0 0 .5px #0000000d}.actions{flex-wrap:wrap;justify-content:center;gap:8px;display:flex}.demo-hint{color:var(--muted);text-align:center;margin:0;font-size:14px}.actions .btn{height:36px;padding:0 16px;font-size:14px}section{padding:100px 0 0}.section-intro{text-align:center;margin-bottom:32px}h2{letter-spacing:-.045em;text-wrap:balance;margin:0 0 12px;font-size:clamp(29px,4vw,44px);font-weight:750;line-height:1.2}.sub{max-width:575px;color:var(--muted);margin:0 auto;font-size:16px}.motion-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none;display:grid}.motion-grid li{background:#f2ecfb;border-radius:18px;justify-items:center;padding:8px 8px 16px;font-size:15px;display:grid}.motion-grid li:nth-child(2){background:#eaf2fc}.motion-grid li:nth-child(3){background:#f8ecdf}.motion-grid li:nth-child(4){background:#e7f1e8}.motion-grid canvas{width:96px;height:96px}.showcase{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:clamp(24px,5vw,68px);display:grid}.showcase-reverse{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.showcase-reverse .showcase-art{grid-area:1/1}.showcase .sub{margin:0}.feature-list{margin:22px 0 0;padding:0;list-style:none}.feature-list li{border-top:1px solid var(--hair);margin-top:12px;padding:12px 0 0}.feature-list b,.feature-list span{display:block}.feature-list span{color:var(--muted);font-size:14.5px}.showcase-art{border-radius:24px;justify-items:center;min-width:0;margin:0;padding:24px 16px 15px;display:grid}.showcase-art figcaption{color:#535064;text-align:center;margin-top:14px;font-size:12.5px}.showcase-art figcaption a{text-underline-offset:3px}.group-art{background:#ebe6f6}.history-art{background:#e7f0e8}.care-art{background:#faecdf}.phone-pair{justify-content:center;align-items:center;gap:12px;width:100%;display:flex}.phone-pair .phone{width:min(50%,184px)}.care-showcase{margin-top:28px}.feature-title{letter-spacing:-.035em;margin:0 0 12px;font-size:clamp(22px,3vw,30px);line-height:1.25}.demo-dex{z-index:5;border:1px solid var(--hair);text-align:center;background:#fdfcfd;border-radius:18px;width:min(100% - 24px,640px);max-height:calc(100% - 24px);margin:0 auto;padding:16px;position:absolute;inset:12px 12px auto;overflow:auto;box-shadow:0 16px 36px #1e1e3c33}.demo-dex h3{margin:0 0 4px;font-size:20px}.demo-dex p{color:var(--muted);margin:0 0 12px;font-size:14px}.evo-tabs{justify-content:center;margin:0 0 10px;display:flex}.evo-tabs .seg button{padding:0 16px}.evo{background:#f4f0f7;border-radius:16px;justify-content:center;align-items:flex-end;gap:6px;margin:0 auto;padding:4px 10px 12px;display:flex}.evo .st{flex:1;min-width:0}.evo canvas{width:min(100%,80px);height:auto;margin:0 auto 4px;display:block}.evo b{font-size:15px;font-weight:600;display:block}.evo .arrow{color:var(--faint);align-self:center;padding-bottom:28px;font-size:20px}.fine{text-align:center;color:var(--muted);margin:18px auto 0;font-size:14px}.fine a,.faq a{color:#554383;text-underline-offset:3px}.chars{grid-template-columns:repeat(4,1fr);gap:16px;display:grid}.char{background:var(--surface);text-align:center;box-shadow:0 0 0 .5px var(--hair),0 4px 14px #1e1e3c0a;border-radius:16px;padding:20px 16px 22px}.char canvas{width:96px;height:96px;margin:0 auto;display:block}.char b{margin-top:6px;font-size:17px;font-weight:600;display:block}.sync-devices{background:var(--hair);border:1px solid var(--hair);border-radius:20px;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;max-width:820px;margin:0 auto;display:grid;overflow:hidden}.sync-device{background:var(--surface);align-items:center;gap:14px;padding:20px 22px;display:flex}.sync-device canvas{flex:none;width:64px;height:64px}.sync-device h3{margin:0 0 4px;font-size:17px}.sync-device p{color:var(--muted);margin:0;font-size:14.5px}.sync-shared{color:#504666;text-align:center;background:#eeedf6;grid-column:1/-1;margin:0;padding:12px 20px;font-size:14px;font-weight:600}.faq-groups{gap:22px;max-width:760px;margin:0 auto;display:grid}.faq-group h3{color:#5c516b;margin:0 0 8px;font-size:14px}.faq{background:var(--surface);box-shadow:0 0 0 .5px var(--hair);border-radius:16px}details{padding:0 22px;position:relative}details+details:before{content:"";background:var(--hair);height:.5px;position:absolute;top:0;left:22px;right:0}summary{cursor:pointer;justify-content:space-between;align-items:center;gap:12px;min-height:56px;padding:10px 0;font-weight:600;list-style:none;display:flex}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--faint);flex:none;font-size:20px;font-weight:300}details[open] summary:after{content:"−"}details p{color:var(--muted);margin:0 0 18px;font-size:15px}.final{text-align:center;margin-top:88px}.final-inner{background:#efe9f5;border-radius:26px;padding:24px 16px 38px}.final canvas{width:84px;height:84px}.final p{color:#5d546b;margin:0 0 20px}.download-options{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;max-width:680px;margin:0 auto;display:grid}.download-option{border:1px solid var(--hair);background:#fbf9fe;border-radius:16px;justify-items:center;gap:4px;min-width:0;padding:14px 8px 12px;text-decoration:none;display:grid}a.download-option:hover{background:#fff;border-color:#8b779e}.download-option:focus-visible{outline-offset:3px;outline:2px solid #554383}.download-option svg{color:#554383;width:26px;height:26px;margin-bottom:3px}.download-option small{color:#5d546b}.download-option.pending{color:#5d546b;background:#ebe5f1}.download-option.pending svg{color:inherit}@media (max-width:540px){.download-options{grid-template-columns:repeat(2,minmax(0,1fr))}}footer{text-align:center;color:var(--muted);padding:24px 24px 40px;font-size:13px}@media (max-width:820px){.hero-panel{padding:30px}.hero-visual .phone{width:min(86%,180px)}.hero-pet{width:66px;height:66px}.hero-pet canvas{width:60px;height:60px}.showcase{gap:24px}.showcase-art{padding:20px 12px 12px}}@media (max-width:680px){.wrap{padding-left:16px;padding-right:16px}nav{height:56px}nav .links{display:none}header.hero{padding-top:8px}.hero-panel,.showcase,.showcase-reverse{grid-template-columns:minmax(0,1fr)}.hero-panel{gap:20px;padding:24px 20px 18px}.hero-visual{padding:16px 8px}.hero-visual .phone{width:148px}.hero-pet{right:10%}.hero-panel .btn{padding:0 13px}.cta{margin-top:20px}section{padding-top:64px}.section-intro{margin-bottom:22px}.showcase-reverse .showcase-art{grid-row:auto}.showcase-copy h2 br{display:none}.motion-grid,.chars{grid-template-columns:repeat(2,minmax(0,1fr))}.sync-devices{grid-template-columns:1fr}.stage{height:300px}.win{width:70%;height:40%;top:40%;left:6%}.status{display:none}.screen .dp-focus-clock{width:auto!important;top:12px!important;left:12px!important;right:12px!important;transform:none!important}.seg{flex-wrap:wrap;justify-content:center}.evo .arrow{display:none}.evo-tabs .seg button{padding:0 10px}.evo b{font-size:13px}.final{margin-top:64px}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+  <script type="module" crossorigin src="/assets/landing-D9IxpEbc.js"></script>
 </head>
 <body>
 <div class="wrap">
-  <nav>
-    <a class="logo" href="#"><canvas data-sprite="cat-2:study" width="32" height="32"></canvas>뽀모야</a>
-    <div class="links"><a href="#features">집중</a><a href="#grow">성장</a><a href="#characters">캐릭터</a><a href="#privacy">프라이버시</a><a href="#faq">FAQ</a></div>
-    <a class="btn primary get" href="#download">받기</a>
+  <nav aria-label="주 메뉴">
+    <a class="logo" href="#"><canvas data-sprite="cat-1:idle" width="32" height="32" aria-hidden="true"></canvas>뽀모야</a>
+    <div class="links"><a href="#together">같이 집중</a><a href="#history">집중 기록</a><a href="#characters">펫 키우기</a><a href="#demo">PC 체험</a><a href="#faq">FAQ</a></div>
+    <a class="btn primary get" href="#download">앱 받기</a>
   </nav>
 </div>
 
-<header class="hero">
-  <div class="wrap">
-    <div class="parade" id="parade"></div>
-    <div class="eyebrow">Windows · macOS 미리보기 1.0.2</div>
-    <h1><span class="mute">집중할수록 자라는</span><br>나만의 친구</h1>
-    <p class="lede">바탕화면에 사는 픽셀 친구와 함께하는 뽀모도로 타이머.<br>모인 시간으로 밥과 놀이를 주며 아기에서 어른까지 키워요.</p>
-    <div class="cta" id="download">
-      <a class="btn primary" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya.dmg"><span>macOS용 받기</span><small>미리보기 1.0.2 · universal</small></a>
-      <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya-setup.exe"><span>Windows용 받기</span><small>미리보기 1.0.2</small></a>
-    </div>
-    <p class="note">아직 서명 전이라 처음 열 때 한 번 막힙니다. <a href="https://github.com/xo0449/pomoya-site/releases/latest">여는 법과 파일 해시</a></p>
-    <p class="note brew">Mac은 Homebrew로도 설치할 수 있습니다: <code>brew install --cask xo0449/tap/pomoya</code></p>
-  </div>
-
-  <div class="demo" id="demo">
-    <div class="screen">
-      <div class="stage" id="stage">
-        <div class="win"><div class="bar"><i></i><i></i><i></i><span>보고서_최종_진짜최종.docx</span></div><h5>3분기 실적 보고</h5><div class="ln" style="width:72%"></div><div class="ln" style="width:86%"></div><div class="ln" style="width:58%"></div><div class="ln" style="width:80%"></div><div class="ln" style="width:44%"></div></div>
-        <canvas id="pet"></canvas>
-        <div class="status" aria-live="polite"><div class="status-top"><b id="g-name">…</b><span id="hud-state">…</span></div><div class="bar"><i id="g-bar"></i></div><div class="status-sub" id="g-sub"></div></div>
+<header class="hero wrap">
+  <div class="hero-panel">
+    <div class="hero-copy">
+      <div class="hero-parade" aria-hidden="true">
+        <canvas data-sprite="cat-3:walk" width="32" height="32"></canvas>
+        <canvas data-sprite="rabbit-3:walk" width="32" height="32"></canvas>
+        <canvas data-sprite="dog-3:walk" width="32" height="32"></canvas>
+        <canvas data-sprite="chick-3:walk" width="32" height="32"></canvas>
       </div>
-      <div class="dock"><i></i><i></i><i class="on"></i><i></i><span class="clock" id="clock"></span></div>
-    </div>
-    <div class="controls">
-      <div class="seg" id="picker" role="group" aria-label="캐릭터"></div>
-      <div class="actions">
-        <button class="btn" id="focus">집중하기</button>
-        <button class="btn" id="mine">내 캐릭터</button>
-        <span class="sep" aria-hidden="true"></span>
-        <button class="btn" id="feed">밥 주기</button>
-        <button class="btn" id="play">놀아 주기</button>
-        <button class="btn" id="starve">굶기기</button>
-        <button class="btn" id="poop">똥 놓기</button>
+      <p class="eyebrow">픽셀 펫과 함께하는 뽀모도로 타이머</p>
+      <h1>집중할수록 자라는<br>나만의 친구</h1>
+      <p class="lede">휴대폰을 내려놓고, 오늘 할 일에 집중해요. 친구들과 각자의 자리에서 함께하고, 모은 시간으로 나만의 픽셀 펫을 키워요.</p>
+      <div class="cta" id="download">
+        <a class="btn primary" href="https://apps.apple.com/app/id6814686003">App Store <small>iPhone · iPad · Mac</small></a>
       </div>
-      <p class="hint">실제 앱과 같은 엔진입니다. 지금 25분 집중이 돌고 있어요. 타이머에 마우스를 올려 멈추거나, 펫을 오른쪽 클릭해 메뉴를 열어 보세요.</p>
+      <p class="note">Windows · 갤럭시(Android) 준비 중</p>
+      <a class="demo-link" href="#demo">바탕화면 펫 체험하기 <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-visual">
+      <div class="phone phone-dark"><img src="./site/focus.webp" width="660" height="1348" fetchpriority="high" alt="픽셀 고양이가 공부하는 뽀모야 집중 타이머"></div>
+      <div class="hero-pet" aria-hidden="true"><canvas data-sprite="cat-2:laptop" width="32" height="32"></canvas></div>
     </div>
   </div>
 </header>
 
+<main>
+<section class="demo" id="demo"><div class="wrap">
+  <div class="section-intro">
+    <p class="kicker">바탕화면 펫</p>
+    <h2>일하는 동안, 화면 한쪽에 작은 친구</h2>
+    <p class="sub">Mac과 Windows에서는 펫이 바탕화면을 걷고, 졸고, 내 옆에서 집중해요. 아래 바탕화면에서 네 친구를 바꿔 띄우고, 타이머를 켜거나 함께 놀아 보세요.</p>
+  </div>
+  <div class="controls">
+    <div class="seg" id="picker" role="group" aria-label="바탕화면에 띄울 캐릭터"></div>
+    <div class="actions">
+      <button class="btn primary" id="follow" type="button">따라와!</button>
+      <button class="btn" id="focus" type="button">집중하기</button>
+      <button class="btn" id="mine" type="button" aria-controls="grow" aria-expanded="false">도감 보기</button>
+      <button class="btn" id="feed" type="button">밥 주기</button>
+      <button class="btn" id="play" type="button">놀아 주기</button>
+    </div>
+    <p class="demo-hint" id="demo-hint" role="status">‘따라와!’를 누르고 바탕화면 안에서 마우스를 움직여 보세요.</p>
+  </div>
+  <div class="screen">
+    <div class="stage" id="stage">
+      <div class="win" aria-hidden="true"><div class="bar"><i></i><i></i><i></i><span>오늘 할 일</span></div><p class="win-title">지금은 한 가지에 집중하기</p><div class="ln" style="width:72%"></div><div class="ln" style="width:86%"></div><div class="ln" style="width:58%"></div></div>
+      <canvas id="pet" aria-label="움직이는 바탕화면 펫"></canvas>
+      <div class="status"><div class="status-top"><b id="g-name">…</b><span id="hud-state">…</span></div><div class="bar"><i id="g-bar"></i></div><div class="status-sub" id="g-sub"></div></div>
+      <div class="demo-dex" id="grow" role="region" aria-labelledby="grow-title" hidden>
+        <h3 id="grow-title">성장 도감</h3>
+        <p>집중해서 모은 에너지로 돌보면, 아기에서 어른까지 네 단계로 자라요.</p>
+        <div class="evo-tabs"><div class="seg" id="evo-tabs" role="group" aria-label="성장 모습을 볼 캐릭터"></div></div>
+        <div class="evo" id="evo"></div>
+      </div>
+    </div>
+    <div class="dock" aria-hidden="true"><i></i><i></i><i class="on"></i><i></i><span class="clock" id="clock"></span></div>
+  </div>
+</div></section>
+
+<section id="sync"><div class="wrap">
+  <div class="section-intro">
+    <p class="kicker">모바일 · 데스크톱 연동</p>
+    <h2>밖에서 만난 친구, 집에서도 그대로</h2>
+    <p class="sub">두 기기에서 같은 뽀모야 계정으로 로그인해요. 카페에서 집중해 모은 에너지로 집에 돌아와 컴퓨터에서 친구에게 밥을 줄 수 있어요.</p>
+  </div>
+  <div class="sync-devices">
+    <div class="sync-device"><canvas data-sprite="rabbit-2:study" width="32" height="32" aria-hidden="true"></canvas><div><h3>iPhone · iPad</h3><p>타이머를 켜고 눈앞의 일에 집중해요.</p></div></div>
+    <div class="sync-device"><canvas data-sprite="rabbit-2:walk" width="32" height="32" aria-hidden="true"></canvas><div><h3>Mac · Windows</h3><p>작업하면서 바탕화면에서 같은 친구를 돌봐요.</p></div></div>
+    <p class="sync-shared">같은 계정에 펫 · 돌봄에너지 · 집중 기록이 이어져요</p>
+  </div>
+</div></section>
+
 <section id="features"><div class="wrap">
-  <h2>집중이 먼저, 돌봄은 그다음</h2>
-  <p class="sub">집중하는 동안 친구는 방해하지 않습니다. 집중한 시간이 쌓여 친구를 돌보는 힘이 됩니다.</p>
-  <div class="grid">
-    <div class="card"><canvas data-sprite="cat-2:study" width="32" height="32"></canvas><h3>옆에서 같이 집중해요</h3><p>15·25·50·90분이나 원하는 시간을 고르면 친구도 옆에서 책을 폅니다. 바탕화면 구석의 작은 타이머가 남은 시간을 보여 주고, 그동안엔 조르지도 매달리지도 않습니다.</p></div>
-    <div class="card"><canvas data-sprite="dog-3:study" width="32" height="32"></canvas><h3>집중한 시간이 에너지가 돼요</h3><p>실제로 집중한 5분마다 돌봄에너지 1, 끝까지 채우면 5분마다 1을 더 받습니다. 5분이 안 되게 남은 시간도 다음 집중으로 이어집니다.</p></div>
-    <div class="card"><canvas data-sprite="rabbit-2:sit" width="32" height="32"></canvas><h3>하루가 기록으로 남아요</h3><p>무엇에 집중했는지 카테고리를 붙이면 하루 흐름과 주·월 기록으로 쌓입니다. 누구와 함께했는지도 남습니다.</p></div>
-    <div class="card"><canvas data-sprite="cat-1:happy" width="32" height="32"></canvas><h3>그 에너지로 돌보고 키워요</h3><p>밥을 주고 놀아 주면 친구가 아기에서 어른까지 네 번 모습을 바꿉니다. 종마다 다른 장난감과 자리를 사서 놓을 수도 있어요.</p></div>
-    <div class="card"><canvas data-sprite="cat-1:walk" width="32" height="32"></canvas><h3>쉬는 동안엔 화면을 돌아다녀요</h3><p>작업표시줄 위를 걷고, 앉고, 꾸벅꾸벅 좁니다. 포커스를 뺏지 않고, 친구가 없는 곳의 클릭은 그대로 통과합니다.</p></div>
-    <div class="card"><canvas data-sprite="cat-1:hang" width="32" height="32"></canvas><h3>굶기면 매달려 떼써요</h3><p>쉬는 시간에 배고프면 화면을 타고 올라와 커서에 매달립니다. 얼마나 조를지는 직접 정할 수 있어요.</p></div>
+  <div class="section-intro">
+    <p class="kicker">집중 타이머</p>
+    <h2>오늘 할 일에 맞춰, 펫도 같이 움직여요</h2>
+    <p class="sub">뽀모도로 타이머로 시간을 정하거나 스톱워치로 시작해요. 집중 분류마다 펫의 동작을 골라 두면, 공부하는 날도 스트레칭하는 날도 함께할 수 있어요.</p>
   </div>
+  <ul class="motion-grid" aria-label="집중 중 펫 동작 예시">
+    <li><canvas data-sprite="cat-2:study" width="32" height="32" aria-hidden="true"></canvas><b>공부</b></li>
+    <li><canvas data-sprite="rabbit-2:laptop" width="32" height="32" aria-hidden="true"></canvas><b>노트북 작업</b></li>
+    <li><canvas data-sprite="dog-2:exercise" width="32" height="32" aria-hidden="true"></canvas><b>운동</b></li>
+    <li><canvas data-sprite="chick-2:meditate" width="32" height="32" aria-hidden="true"></canvas><b>명상</b></li>
+  </ul>
 </div></section>
 
-<section id="grow"><div class="wrap">
-  <h2>돌보는 만큼 자랍니다</h2>
-  <p class="sub">시간이 지난다고 크지 않습니다. 집중해 모은 에너지로 밥과 놀이를 주면 성장 포인트가 쌓입니다.</p>
-  <div class="evo-tabs"><div class="seg" id="evo-tabs" role="group" aria-label="캐릭터"></div></div>
-  <div class="evo" id="evo"></div>
-  <div class="xp"><div><b>+3</b>밥 주기 (에너지 3)</div><div><b>+2</b>놀아 주기 (에너지 2)</div><div><b>ϟ 1</b>실제로 집중한 5분마다</div><div><b>ϟ +1</b>끝까지 채우면 5분마다 더</div></div>
-  <p class="fine">배부르면(80 이상) 밥을 안 받고, 배고프면 놀지 않습니다. 밥과 놀이 한 번마다 친밀도 하트가 하나씩 쌓입니다.</p>
-</div></section>
-
-<section id="day"><div class="wrap">
-  <h2>펫의 하루</h2>
-  <p class="sub">앱을 꺼 둔 시간도 흐릅니다. 밥만 주고 퇴근하면, 다음 날 아침 똥이 기다립니다.</p>
-  <div class="flow"><span>돌아다님</span><i>→</i><span>배고픔</span><i>→</i><span class="hot">화남</span><i>→</i><span class="hot">화면 등반</span><i>→</i><span class="hot">매달려 떼쓰기</span><i>→</i><span class="good">밥</span><i>→</i><span class="good">행복</span><i>→</i><span>낮잠</span><i>→</i><span>똥</span><i>→</i><span>냄새…</span></div>
-</div></section>
-
-<section id="levels"><div class="wrap">
-  <h2>방해는 당신이 정한 만큼만</h2>
-  <p class="sub">회의 중 화면 공유에서 펫이 커서에 매달려 있으면 곤란하니까요.</p>
-  <div class="levels">
-    <div class="level"><b>얌전히</b><span>바닥에서 발만 구릅니다. 절대 올라오지 않아요.</span></div>
-    <div class="level def"><b>보통</b><span>올라와서 매달리지만 1분이면 포기하고 내려갑니다.</span></div>
-    <div class="level"><b>끈질기게</b><span>밥 줄 때까지 안 내려갑니다. 각오하세요.</span></div>
+<section id="together"><div class="wrap showcase">
+  <div class="showcase-copy">
+    <p class="kicker">그룹 집중</p>
+    <h2>멀리 있어도<br>같은 공부방처럼</h2>
+    <p class="sub">친구와 그룹을 만들거나 공개 그룹에 들어가 보세요. 각자 타이머를 켜고, 화면 속 펫을 보며 누구와 함께 집중하고 있는지 알 수 있어요.</p>
+    <ul class="feature-list">
+      <li><b>지금 누가 집중하고 있나요?</b><span>집중 중인 친구와 쉬는 중인 친구를 펫의 모습으로 확인해요.</span></li>
+      <li><b>함께 쌓은 시간을 한눈에</b><span>오늘, 이번 주, 이번 달 집중 시간과 그룹 순위를 살펴봐요.</span></li>
+    </ul>
   </div>
-  <p class="fine">'캐릭터 활동하기'를 끄면 제자리에 가만히 있고 조르지 않습니다. 앱을 켜자마자 조르지도 않습니다.</p>
+  <figure class="showcase-art group-art">
+    <div class="phone phone-dark"><img src="./site/group.webp" width="660" height="1348" loading="lazy" alt="그룹 화면에 각자 꾸민 펫과 집중 중 또는 쉬는 중 상태가 표시된 예시"></div>
+    <figcaption>앱 화면 예시 · <a href="./site/group.webp" target="_blank" rel="noopener">그룹 화면 크게 보기</a></figcaption>
+  </figure>
+</div></section>
+
+<section id="history"><div class="wrap showcase showcase-reverse">
+  <div class="showcase-copy">
+    <p class="kicker">집중 기록</p>
+    <h2>짧게 집중한 날도<br>나만의 기록이 돼요</h2>
+    <p class="sub">오늘 얼마나 했는지, 어떤 일에 시간을 썼는지, 어느 펫과 함께했는지 돌아볼 수 있어요.</p>
+    <ul class="feature-list">
+      <li><b>오늘의 흐름</b><span>공부, 작업, 운동처럼 분류마다 색을 정해 하루의 집중을 시간순으로 살펴봐요.</span></li>
+      <li><b>일주일과 한 달의 리듬</b><span>요일별 막대와 월간 달력으로 집중이 쌓이는 흐름을 확인해요.</span></li>
+    </ul>
+  </div>
+  <figure class="showcase-art history-art">
+    <div class="phone-pair">
+      <div class="phone"><img src="./site/history-day.webp" width="660" height="1348" loading="lazy" alt="하루 집중 흐름, 분류별 시간과 함께한 펫이 보이는 일간 기록"></div>
+      <div class="phone"><img src="./site/history-month.webp" width="660" height="1348" loading="lazy" alt="날짜별 집중이 초록색 칸으로 쌓이는 월간 달력"></div>
+    </div>
+    <figcaption>앱 화면 예시 · <a href="./site/history-day.webp" target="_blank" rel="noopener">일간 기록</a> · <a href="./site/history-month.webp" target="_blank" rel="noopener">월간 달력</a></figcaption>
+  </figure>
 </div></section>
 
 <section id="characters"><div class="wrap">
-  <h2>캐릭터마다 성격이 달라요</h2>
-  <p class="sub">걷는 속도, 낮잠 길이, 등반 실력이 제각각입니다. 미리보기 동안에는 네 마리를 모두 데려올 수 있습니다.</p>
+  <div class="section-intro">
+    <p class="kicker">펫 키우기</p>
+    <h2>첫 친구를 고르는 순간부터 내 취향대로</h2>
+    <p class="sub">고양이, 강아지, 토끼, 병아리 중 한 마리와 시작해요. 집중해서 모은 돌봄에너지로 새 친구를 데려오고, 펫마다 다른 모습과 공간을 만들어 보세요.</p>
+  </div>
   <div class="chars" id="chars"></div>
-</div></section>
-
-<section id="privacy"><div class="wrap">
-  <h2>당신의 화면은 당신 것</h2>
-  <p class="sub">하루 종일 켜 두는 앱이라서 더 조심합니다.</p>
-  <div class="privacy">
-    <div><b>계정에는 필요한 것만 둡니다</b>Apple 또는 Google 계정으로 로그인해서 씁니다. 캐릭터와 집중 기록을 계정에 보관해 컴퓨터와 폰에서 이어 씁니다. 그룹에 들어가면 닉네임과 집중 현황이 같은 그룹 사람에게 보입니다. 앱은 어떤 기능을 쓰는지 익명 통계를 보냅니다. 캐릭터 이름·IP 주소·화면 내용은 보내지 않습니다. 무엇을 보관하고 보내는지는 처리방침에 모두 적어 두었습니다. <a href="privacy.html">개인정보 처리방침</a></div>
-    <div><b>읽는 것은 커서 위치와 화면 크기뿐</b>펫이 따라오고 바닥을 찾으려면 필요합니다. 놀아주기를 끝내려고 우클릭·ESC가 눌렸는지만 더 봅니다. 무엇을 눌렀는지 기록하지도 보내지도 않습니다.</div>
-    <div><b>화면·키 입력·앱 목록을 보지 않습니다</b>그런 코드를 아예 넣지 않았습니다.</div>
-    <div><b>커서를 움직이지 않습니다</b>매달리는 시늉만 합니다. 마우스는 언제나 당신 손에 있습니다.</div>
+  <div class="showcase care-showcase">
+    <div class="showcase-copy">
+      <h3 class="feature-title">같은 펫도 우리 집에선 조금 달라요</h3>
+      <ul class="feature-list">
+        <li><b>상점에서 새 친구 만나기</b><span>곰도리처럼 상점에서만 만날 수 있는 친구를 돌봄에너지로 데려올 수 있어요.</span></li>
+        <li><b>작은 방과 옷장 꾸미기</b><span>쉬는 자리와 장난감을 놓고, 배경을 바꿔요. 모자, 안경, 옷도 친구마다 골라 입혀요.</span></li>
+        <li><b>자라는 순간 모아 두기</b><span>도감에서 만난 친구와 성장한 모습을 찾아보고, 특별한 날엔 성장 카드를 남겨요.</span></li>
+      </ul>
+    </div>
+    <figure class="showcase-art care-art">
+      <div class="phone-pair">
+        <div class="phone"><img src="./site/room.webp" width="660" height="1348" loading="lazy" alt="잔디 배경과 분홍 쿠션으로 꾸민 고양이 펫의 방"></div>
+        <div class="phone"><img src="./site/shop.webp" width="660" height="1348" loading="lazy" alt="도시와 바다 등 여러 배경을 고르는 뽀모야 상점"></div>
+      </div>
+      <figcaption>앱 화면 예시 · 캐릭터 방과 배경 상점</figcaption>
+    </figure>
   </div>
 </div></section>
 
 <section id="faq"><div class="wrap">
-  <h2>자주 묻는 질문</h2><p class="sub"></p>
-  <div class="faq">
-  <details><summary>언제 나오나요?</summary><p>아직 날짜를 약속하지 않습니다. 펫의 행동은 이 페이지에서 보시는 대로 완성되어 있고, Windows와 macOS 모두 미리보기 버전을 위에서 받을 수 있습니다. 아직 서명 전이라 처음 열 때 한 번 막힙니다. 여는 법은 받는 곳에 적어 두었습니다.</p></details>
-  <details><summary>왜 로그인해야 하나요?</summary><p>캐릭터와 집중 기록을 계정에 보관해서 컴퓨터와 폰에서 이어 쓰기 위해서입니다. Apple 또는 Google 계정으로 처음 한 번 로그인하면 그 뒤에는 인터넷이 끊겨도 그대로 씁니다. 만 14세 이상만 로그인할 수 있습니다. 계정은 <b>설정 → 계정 → 계정 삭제</b>에서 언제든 지울 수 있습니다.</p></details>
-  <details><summary>집중 25분, 휴식 5분처럼 반복할 수 있나요?</summary><p>네. 집중 탭의 반복 모드를 켜면 집중이 끝난 뒤 정한 휴식(1~60분)으로 넘어가고, 휴식이 끝나면 같은 길이로 다시 집중하며 소리로 알려 줍니다. 휴식 시간은 에너지와 오늘 집중에 들어가지 않습니다.</p></details>
-  <details><summary>놀아주기는 어떻게 하나요?</summary><p>펫을 오른쪽 클릭하고 "놀아 주기"를 누르거나, 내 캐릭터 창에서 누릅니다. 에너지 2를 쓰고 30초 동안 종마다 다른 장면이 마우스 곁에서 벌어집니다. 배고프면 못 놀아요. 그만두려면 어디서든 우클릭이나 ESC.</p></details>
-  <details><summary>배는 얼마나 빨리 고파지나요?</summary><p>포만감은 낮에는 시간당 10, 밤(22시~6시)에는 4씩 줄어요(펫도 잡니다). 컴퓨터를 켜 두었는지와는 상관없습니다. 60 아래면 출출, 20 아래면 배고파서 집중 중이 아닐 때 마우스로 기어올라옵니다. 밥 한 번에 50이 차고, 80 이상이면 안 받습니다. 하루에 밥을 네 번쯤 먹고(에너지 12), 30분 집중을 끝까지 하면 에너지 12가 모입니다.</p></details>
-  <details><summary>상점은 뭘 파나요?</summary><p>종마다 장난감 하나와 자리 하나, 그리고 간식입니다. 고양이는 공과 쿠션, 토끼는 터널과 건초 침대처럼 다릅니다. 재화는 집중해서 모은 에너지뿐이고 밥·성장은 팔지 않습니다. 산 물건은 산 캐릭터의 것이라 그 캐릭터만 쓰고, 작별하면 함께 사라집니다. 마우스로 옮기거나 눌러서 바로 쓰게 할 수 있습니다.</p></details>
-  <details><summary>집중은 어떻게 시작하나요?</summary><p>펫을 오른쪽 클릭하면 맨 위에 "N분 집중 시작"이 있어 바로 시작합니다. 시간을 바꾸려면 "시간 고르기…"로 창을 엽니다. 이 페이지의 미리보기에서도 "집중하기"로 똑같이 써 보실 수 있습니다.</p></details>
-  <details><summary>macOS에서 "악성 코드가 없음을 확인할 수 없습니다"라고 뜹니다</summary><p>아직 코드 서명과 공증을 안 해서 그렇습니다. 그 창에는 "열기"가 없으니 <b>완료</b>를 누르세요("휴지통으로 이동"을 누르지 마세요). 그다음 <b>시스템 설정 → 개인정보 보호 및 보안</b>을 열고 아래로 내리면 "Pomoya이(가) 차단되었습니다" 줄 옆에 <b>확인 없이 열기</b> 버튼이 있습니다. 누르고 암호나 Touch ID로 확인하면 열립니다. 번거롭게 해서 죄송합니다.</p></details>
-  <details><summary>macOS에서 Dock에 아이콘이 안 보여요</summary><p>일부러 그렇게 만들었습니다. 펫이 Dock이나 Cmd+Tab 목록을 차지하지 않게 했습니다. 잘 떴는지는 화면 아래를 걸어다니는 펫과 메뉴 막대 오른쪽의 뽀모야 아이콘으로 확인합니다. 종료도 그 메뉴 막대 아이콘에서 합니다.</p></details>
-  <details><summary>모니터가 두 대인데요?</summary><p>펫이 살 모니터를 설정에서 고를 수 있습니다. 배율이 다른 모니터 사이도 됩니다. 고른 모니터를 뽑으면 주 모니터로 돌아옵니다.</p></details>
-  <details><summary>설치가 복잡한가요?</summary><p>설치 파일 하나를 두 번 누르면 끝입니다. 관리자 권한도 필요 없습니다.</p></details>
-  <details><summary>펫이 죽나요?</summary><p>아니요. 굶기면 떼를 쓰고, 안 치우면 냄새가 날 뿐입니다. 일하다 잊어도 죄책감은 없게 했습니다.</p></details>
-  <details><summary>무겁지 않나요?</summary><p>Tauri 기반이라 브라우저를 통째로 싣지 않습니다. 가만히 있을 때는 그리는 횟수도 줄입니다. 실제 CPU·메모리 수치는 출시 전에 재서 공개하겠습니다.</p></details>
-  <details><summary>게임이나 전체 화면 영상 위에도 뜨나요?</summary><p>운영체제가 허용하는 범위까지만 뜹니다. 독점 전체 화면 게임이나 보안 화면 위는 약속하지 않습니다.</p></details>
-  <details><summary>모바일도 나오나요?</summary><p>계획에 있습니다. 다만 휴대폰에서는 다른 앱 위를 돌아다닐 수 없어서, 같은 펫을 앱 안에서 돌보는 형태가 됩니다.</p></details>
+  <div class="section-intro">
+    <p class="kicker">FAQ</p>
+    <h2>자주 묻는 질문</h2>
   </div>
+  <div class="faq-groups">
+    <div class="faq-group">
+      <h3>설치와 기기 연동</h3>
+      <div class="faq">
+        <details><summary>어떤 기기에서 쓸 수 있나요?</summary><p>Mac·iPhone·iPad는 <a href="https://apps.apple.com/app/id6814686003">App Store</a>에서 받을 수 있어요. Windows와 갤럭시(Android)는 준비 중이에요.</p></details>
+        <details><summary>폰에서 키운 펫을 PC에서도 만날 수 있나요?</summary><p>네. Apple 또는 Google로 로그인할 때 두 기기에서 같은 뽀모야 계정을 쓰면 펫, 돌봄에너지, 집중 기록이 이어져요. PC에서 진행 중인 집중도 모바일에서 확인할 수 있어요.</p></details>
+        <details><summary>Mac에서 앱을 어디에서 찾나요?</summary><p>Mac에서는 메뉴 막대 오른쪽의 뽀모야 아이콘에서 설정을 열거나 앱을 종료할 수 있어요. 펫은 화면 아래쪽에서 만날 수 있어요.</p></details>
+      </div>
+    </div>
+    <div class="faq-group">
+      <h3>타이머와 그룹</h3>
+      <div class="faq">
+        <details><summary>친구는 어떻게 초대하나요?</summary><p>그룹 탭에서 새 그룹을 만들어요. 우리끼리만 쓰고 싶다면 비공개로 만든 뒤 친구에게 초대 코드를 보내세요. 친구는 그룹 탭에서 코드로 들어올 수 있어요.</p></details>
+        <details><summary>친구와 타이머를 동시에 시작해야 하나요?</summary><p>각자 편한 시간에 시작하면 돼요. 그룹의 ‘지금’ 화면에서 서로의 집중·휴식 상태를 보고, 순위에서 오늘·이번 주·이번 달 집중 시간을 확인할 수 있어요.</p></details>
+        <details><summary>같은 그룹 사람에게 무엇이 보이나요?</summary><p>닉네임, 펫의 모습, 집중·휴식 상태, 기간별 집중 시간 합계가 보여요. 이메일이나 분류 이름, 개별 집중 내역은 그룹 화면에 표시되지 않아요.</p></details>
+        <details><summary>집중 25분, 휴식 5분으로 반복할 수 있나요?</summary><p>네. 집중 화면에서 반복 모드를 켜고 집중과 휴식 길이를 정하세요. 시간을 정하기 어려운 날엔 스톱워치로 시작할 수도 있어요.</p></details>
+        <details><summary>집중 중에 다른 앱을 써도 되나요?</summary><p>모바일의 기본 설정에서는 다른 앱으로 이동하면 집중이 잠시 멈춰요. 자료를 찾아야 하는 날엔 집중 화면에서 ‘다른 앱 허용’을 켜고 시작하세요.</p></details>
+      </div>
+    </div>
+    <div class="faq-group">
+      <h3>펫과 기록</h3>
+      <div class="faq">
+        <details><summary>돌봄에너지는 어떻게 쓰나요?</summary><p>집중해서 모은 에너지로 밥을 주고 놀아 줄 수 있어요. 상점에서 새 펫을 데려오거나 옷과 배경, 장난감을 고를 때도 같은 에너지를 써요.</p></details>
+        <details><summary>공부와 운동을 따로 기록할 수 있나요?</summary><p>네. 집중 분류를 만들고 색을 지정해 두면 기록 탭에서 분류별 시간을 확인할 수 있어요. 날짜별로 함께 집중한 펫도 볼 수 있어요.</p></details>
+        <details><summary>작업 중에는 펫을 조용하게 둘 수 있나요?</summary><p>PC 설정에서 펫의 활동을 끄면 제자리에 머물러요. 펫을 띄울 모니터도 설정에서 고를 수 있어요.</p></details>
+      </div>
+    </div>
+  </div>
+  <p class="fine">다른 질문이 있나요? <a href="support.html">지원 페이지</a>에서 문의할 수 있어요.</p>
 </div></section>
 
-<div class="final">
-  <h2>오늘은 누구와 집중할까요?</h2>
-  <p>Windows와 macOS 미리보기 버전을 받을 수 있습니다.</p>
-  <div class="cta">
-    <a class="btn primary" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya.dmg">macOS용 받기</a>
-    <a class="btn" href="https://github.com/xo0449/pomoya-site/releases/latest/download/Pomoya-setup.exe">Windows용 받기</a>
+<div class="final wrap" id="get-app">
+  <div class="final-inner">
+    <canvas data-sprite="cat-1:happy" width="32" height="32" aria-hidden="true"></canvas>
+    <h2>뽀모야 받기</h2>
+    <p>기기를 골라 첫 친구를 만나 보세요.</p>
+    <div class="download-options">
+      <a class="download-option" href="https://apps.apple.com/app/id6814686003">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M2 20h20"/></svg>
+        <b>Mac</b><small>App Store</small>
+      </a>
+      <a class="download-option" href="https://apps.apple.com/app/id6814686003">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 19h2"/></svg>
+        <b>iPhone</b><small>App Store</small>
+      </a>
+      <a class="download-option" href="https://apps.apple.com/app/id6814686003">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><rect x="4.5" y="2.5" width="15" height="19" rx="2.5"/><path d="M10.5 19h3"/></svg>
+        <b>iPad</b><small>App Store</small>
+      </a>
+      <div class="download-option pending">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z"/></svg>
+        <b>Windows</b><small>준비 중</small>
+      </div>
+      <div class="download-option pending">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4 2 3m7-3-2 3M4 15a8 8 0 1 1 16 0v3H4z"/><circle cx="9" cy="12" r=".65" fill="currentColor"/><circle cx="15" cy="12" r=".65" fill="currentColor"/></svg>
+        <b>갤럭시</b><small>준비 중</small>
+      </div>
+    </div>
   </div>
-  <p class="note brew">Mac은 Homebrew로도 설치할 수 있습니다: <code>brew install --cask xo0449/tap/pomoya</code></p>
 </div>
-<footer>뽀모야 · 개발 중인 프로젝트입니다 · <a href="support.html">지원</a> · <a href="privacy.html">개인정보 처리방침</a></footer>
+</main>
+<footer>뽀모야 · <a href="support.html">지원</a> · <a href="privacy.html">개인정보 처리방침</a> · <a href="terms.html">이용 약관</a></footer>
 
+<script>
+  if (location.protocol === 'file:') {
+    document.getElementById('demo-hint').textContent = 'PC 체험은 로컬 미리보기 또는 웹사이트 주소에서 열어 주세요.';
+  }
+</script>
 </body>
 </html>
